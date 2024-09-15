@@ -1,5 +1,5 @@
 <h1>商品一覧</h1>
-<span>全X件</span>
+<span>全<%= @items.count %>件</span>
 <div class="items_index">
   <% @items.each do |f| %>
     <%= f.get_image %>
