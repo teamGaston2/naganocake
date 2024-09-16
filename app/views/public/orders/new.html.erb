@@ -1,4 +1,5 @@
-<%= form_with model: @orders, url: public_orders_confirm_path, method: :get,local: true do |f| %>
+<%= form_with model: @orders, url: orders_path, method: :get,local: true do |f| %>
+<!--public_orders_confirm_path-->
  <%= f.label :address, "お届け先の住所" %>
 
  <%= f.radio_button :address, 0, checked: "checked" %>
@@ -15,6 +16,6 @@
      [
       ['クレジットカード'],
       ['銀行振込']
-     ],prompt: "クレジットカード" %>
+     ], prompt: "支払い方法を選択" %>
   <%= f.submit "更新", class: "btn btn-sm btn-success" %>
 <% end %>
