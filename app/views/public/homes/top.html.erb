@@ -2,21 +2,18 @@
 <div class="container px-5 px-sm-0">
   <div class="row">
     <div class="col-md-3">
-      <h2>ジャンル検索</h2>
-      <!--%= render 'public/shared/sidebar', title: 'ジャンル検索', genres: @genres %>-->
-        <table class="table">
-            <li class="list-group-item">ケーキ</li>
-            <li class="list-group-item">焼き菓子</li>
-            <li class="list-group-item">プリン</li>
-            <li class="list-group-item">キャンディ</li>
-        </table>
+      <%= render 'public/shared/sidebar', title: 'ジャンル検索', genres: @genres %>
     </div>
 
     <div class='col-md-9'>
-            <p>ようこそ、ながのCAKEへ！<br>
-            このサイトは、ケーキ販売のECサイトになります。<br>
-            会員でない方も商品の閲覧はできますが、購入には会員登録が必要になります。</p>
-
+      <div class="card bg-dark text-white">
+        <%= image_tag 'haunted-house.png', class: 'card-img', alt: 'イメージ画像' %>
+        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-start mx-auto p-2" style="width: 500px;">
+          <h5 class="card-title">ようこそ、ながのCAKEへ！</h5>
+          <p class="card-text">このサイトは、ケーキ販売のECサイトになります。</p>
+          <p class="card-text">会員でない方も商品の閲覧はできますが、購入には会員登録が必要になります。</p>
+        </div>
+      </div>
         <h2 class="h4">新着商品</h2>
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
