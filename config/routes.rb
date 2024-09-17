@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  
+
   devise_for :customers, controllers: {
    registrations: 'public/registrations',
      sessions: 'public/sessions'
    }
-   
+
    devise_for :admins, controllers: {
     sessions: 'admin/sessions'
    }
-  
+
   namespace :admin do
     resources :items, only: [:index, :new, :create, :show, :edit, :update]
     resources :genres, only: [:index, :create, :edit, :update]
@@ -16,11 +16,11 @@ Rails.application.routes.draw do
     resources :orders, only: [:show, :update]
     resources :order_details, only: [:update]
   end
-  
+
 
    scope module: :public do
     root to: 'homes#top'
-    #root to: 'homes#about'
+    get '/about' => 'homes#about' ,as: 'about'
     resources :items, only: [:index, :show]
     resource :customers, only: [:show, :edit, :update] do
       collection do
@@ -41,7 +41,7 @@ Rails.application.routes.draw do
     end
     resources :addresses, only: [:index, :create, :edit, :update, :destroy]
   end
-   
+
 end
 
  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
