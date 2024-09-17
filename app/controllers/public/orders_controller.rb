@@ -41,7 +41,7 @@ class Public::OrdersController < ApplicationController
       @order.adress = params[:order][:new_adress]
       @order.addressee = params[:order][:new_addressee]
     else
-      flash[:error] = "不正な住所選択が行われました"
+      flash[:notice] = "不正な住所選択が行われました"
       redirect_to new_order_path and return
     end
   end
