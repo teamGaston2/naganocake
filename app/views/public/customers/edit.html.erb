@@ -10,7 +10,6 @@
 
   <main>
     <p class="notice"><%= notice %></p>
-      <%= yield %>
   </main>
 
     <div class="container">
@@ -19,25 +18,19 @@
         <h2>会員情報編集</h2>
       </div>
     </div>
-      <%= form_with (current_user) do |f| %>
+      <%= form_with model: @customer, url: information_path do |f| %>
     <div class="row">
-      <div class="col-3"><label for="inputlastName">姓</label></div>
+      <div class="col-3"><label for="inputlastName">氏名</label></div>
       <div class="col-3"><%= f.text_field :last_name, autofocus: true, id:"inputlastName" %></div>
-    </div>
-    <div class="row">
-      <div class="col-3"><label for="inputfirstName">名</label></div>
       <div class="col-3"><%= f.text_field :first_name, autofocus: true, id:"inputfirstName" %></div>
     </div>
     <div class="row">
-      <div class="col-3"><label for="inputlast_Name_kana">姓(カナ)</label></div>
+      <div class="col-3"><label for="inputlast_Name_kana">フリガナ</label></div>
       <div class="col-3"><%= f.text_field :last_name_kana, autofocus: true, id:"inputlast_Name_kana" %></div>
-    </div>
-    <div class="row">
-      <div class="col-3"><label for="inputfirst_Name_kana">名(カナ)</label></div>
       <div class="col-3"><%= f.text_field :first_name_kana, autofocus: true, id:"inputfirst_Name_kana" %></div>
     </div>
     <div class="row">
-      <div class="col-3"><label for="inputPost_code">郵便番号（ハイフンなし)%></label></div>
+      <div class="col-3"><label for="inputPost_code">郵便番号（ハイフンなし)</label></div>
       <div class="col-3"><%= f.text_field :post_code, autofocus: true, id:"inputPost_code" %></div>
       <div class="col-3"></div>
     </div>
@@ -46,8 +39,7 @@
       <div class="col-3"><%= f.text_field :address, autofocus: true, id:"inputAddress" %></div>
     </div>
     <div class="row">
-      <div class="col-3"><label for= "inoutTelephone_number">電話番号(ハイフンなし) %></label></div>
-      <div class="col-1"></div>
+      <div class="col-3"><label for= "inoutTelephone_number">電話番号(ハイフンなし)</label></div>
       <div class="col-3"><%= f.text_field :telephone_number, autofocus: true, id:"inputTelephone_number" %></div>
       <div class="col-3"></div>
     </div>
@@ -55,16 +47,11 @@
       <div class="col-3"><label for= "inputEmail">メールアドレス</label></div>
       <div class="col-3"><%= f.text_field :email, autofocus: true, id:"inputEmail" %></div>
     </div>
-
-    </div>
+  </div>
     <div class="row">
       <div class="col-4"></div>
-      <div class="col-3 py-1"><%= f.submit "編集内容を保存", method: :update, class: "btn btn-secondary" %></div>
-    </div>
-
-    <div class="row">
-      <div class="col-4"></div>
-      <div class="col-3 py-1"><%= link_to "退会する", customer_registration_path, class: "btn btn-outline-danger" %></div>
+      <div class="col-3 py-1"><%= f.submit "編集内容を保存", method: :update, class: "btn btn-success" %></div>
+      <div class="col-3 py-1"><%= link_to "退会する", unsubscribe_path, class: "btn btn-danger" %></div>
     <div class="col"></div>
     <div class="col"></div>
   </div>

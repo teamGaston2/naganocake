@@ -4,7 +4,7 @@ class Public::CustomersController < ApplicationController
   end
 
   def edit
-    @customer = Customer.find(params[:id])
+    @customer = current_customer
     if @customer == current_customer
       render :edit
     else
@@ -13,10 +13,10 @@ class Public::CustomersController < ApplicationController
   end
 
   def update
-    @customer = Customer.find(params[:id])
+    @customer = current_customer
       if @customer.update(customer_params)
         flash[:notice] = "変更を保存しました。"
-        redirect_to customer_path
+        redirect_to my_page_path
       else
         render :edit
       end
