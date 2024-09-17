@@ -2,7 +2,7 @@
 <span>全<%= @items.count %>件</span>
 <div class="items_index">
   <% @items.each do |f| %>
-    <%= f.get_image %>
+    <%= link_to(image_tag(f.get_image), item_path) %>
     <%= f.text_name %>
     <%= f.price %>
   <% end %>

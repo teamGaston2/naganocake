@@ -1,2 +1,65 @@
-<h1>Public::Homes#top</h1>
-<p>Find me in app/views/public/homes/top.html.erb</p>
+
+<div class="container px-5 px-sm-0">
+  <div class="row">
+    <div class="col-md-3">
+      <h2>ジャンル検索</h2>
+      <!--%= render 'public/shared/sidebar', title: 'ジャンル検索', genres: @genres %>-->
+        <table class="table">
+            <li class="list-group-item">ケーキ</li>
+            <li class="list-group-item">焼き菓子</li>
+            <li class="list-group-item">プリン</li>
+            <li class="list-group-item">キャンディ</li>
+        </table>
+    </div>
+
+    <div class='col-md-9'>
+            <p>ようこそ、ながのCAKEへ！<br>
+            このサイトは、ケーキ販売のECサイトになります。<br>
+            会員でない方も商品の閲覧はできますが、購入には会員登録が必要になります。</p>
+
+        <h2 class="h4">新着商品</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="商品画像">
+                    <div class="card-body">
+                        <p class="card-text">商品名 ¥0,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="商品画像">
+                    <div class="card-body">
+                        <p class="card-text">商品名 ¥0,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="商品画像">
+                    <div class="card-body">
+                        <p class="card-text">商品名 ¥0,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="商品画像">
+                    <div class="card-body">
+                        <p class="card-text">商品名 ¥0,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end mt-3">
+            <a href="#" class="text-primary">全ての商品を見る ></a>
+        </div>
+    </div>
+ </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
