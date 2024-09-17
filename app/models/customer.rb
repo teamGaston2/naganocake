@@ -5,4 +5,10 @@ class Customer < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :password, presence: true, length: { minimum: 6 }
+  def full_name
+    first_name + last_name
+  end
+  
+  has_many :orders , dependent: :destroy 
+  
 end
