@@ -1,18 +1,8 @@
 <div class="sidebar">
   <h2>ジャンル検索</h2>
-  <table class="table">
-      <li class="list-group-item">ケーキ</li>
-      <li class="list-group-item">焼き菓子</li>
-      <li class="list-group-item">プリン</li>
-      <li class="list-group-item">キャンディ</li>
-  </table>
-</div>
-
-<div class="sidebar">
-  <h2>ジャンル検索</h2>
   <ul class="list-group">
     <% genres.each do |genre| %>
-      <li class="list-group-genre"><%= genre %></li>
+      <li class="list-group-item"><%= genre %></li>
     <% end %>
   </ul>
 </div>
