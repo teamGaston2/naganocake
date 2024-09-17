@@ -6,7 +6,7 @@
       <div class="d-flex justify-content-end">
       <ul class="navbar-nav" style="flex-direction: row;">
         <li>
-          <%=  link_to customers_path(current_customer.id) , class:"nav-link text-light" do %>
+          <%=  link_to my_page_path(current_customer.id) , class:"nav-link text-light" do %>
             <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">マイページ</button>
           <% end %>
         </li>
