@@ -1,2 +1,16 @@
-<h1>Public::Items#show</h1>
-<p>Find me in app/views/public/items/show.html.erb</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+    <div style="padding-left:20%;">
+    <%= image_tag url_for(@item.image), class: 'img-fluid', style: 'width: 65%;' %>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <p class="my-4"><span style="margin-left:150px;"><%= @item.name %></span></p>
+    <p class="my-4"><span style="margin-left:135px;"><%= @item.introduction %></span></p>
+    <p class="my-4"><span style="margin-left:40px;"><%= number_with_delimiter((@item.price * 1.1).round) %>円 ( <%= number_with_delimiter(@item.price) %>円 )</span></p>
+    <p class="my-4"><span style="margin-left:90px; color:green;">[仮]数量プルダウン</span></p>
+    <%= link_to 'カートに入れる', cart_items_path(@item), class: 'btn btn-success' %>
+    </div>
+  </div>
+</div>
