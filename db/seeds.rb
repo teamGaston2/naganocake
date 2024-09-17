@@ -9,3 +9,15 @@ Admin.create!(
    email: 'test@test.com',
    password: "testhoge"
 )
+
+# 2.times do |n|
+
+# Admin.create!(
+
+# email: "test#{n + 1}@test.com",
+
+# password: "testhoge"
+
+# )
+
+# end
