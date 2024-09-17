@@ -1,3 +1,83 @@
 
-<h1>Public::Customers#edit</h1>
-<p>Find me in app/views/public/customers/edit.html.erb</p>
+  <% if @customer.errors.any? %>
+    <%= pluralize(@customer.errors.count, "error") %> prohibited this book from being saved:
+      <ul>
+        <% @customer.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+  <% end %>
+  
+  <main>
+    <p class="notice"><%= notice %></p>
+      <%= yield %>
+  </main>
+  
+  
+    <div class="container">
+      <h2>User info</h2>
+    <div class="row">
+      
+      <%= form_with model: @customer do |f| %>
+        <label for="inputName">Name</label>
+          <p><%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%></p>
+        
+        <label for="inputImage">Image</label>
+          <p><%= f.file_field :profile_image, placeholder: "プロフィール画像", accept: "image/*" %></p>
+          
+        <label for="inputtext">introduction</label>
+          <p><%= f.text_area :introduction %></p>
+          
+        <%= f.submit "Update User", method: :update, class: "btn btn-secondary" %>
+        
+      <% end %>
+    </div>
+  </div>
+
+<div class="row">
+      <div class="col">
+        <h2>新規登録</h2>
+      </div>
+    </div>
+      <%= form_with (current_user) do |f| %>
+    <div class="row">
+      <div class="col-3">名前</div>
+      <div class="col-3"><%= f.text_field :full_name %></div>
+    </div>
+    <div class="row">
+      <div class="col-3">フリガナ</div>
+      <div class="col-3"><%= f.text_field :full_name_kana %></div>
+    </div>
+    <div class="row">
+      <div class="col-3">郵便番号（ハイフンなし)%></div>
+      <div class="col-3"><%= f.text_field :post_code %></div>
+      <div class="col-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-3">住所</div>
+      <div class="col-3"><%= f.text_field :address %></div>
+    </div>
+    <div class="row">
+      <div class="col-3"><%= f.label :telephone_number, "電話番号(ハイフンなし)" %></div>
+      <div class="col-1"></div>
+      <div class="col-3"><%= f.text_field :telephone_number %></div>
+      <div class="col-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-3">メールアドレス</div>
+      <div class="col-3"><%= f.text_field :email %></div>
+    </div>
+
+    </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-3 py-1"><%= f.submit "編集内容を保存", method: :update, class: "btn btn-secondary" %></div>
+    </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-3 py-1"><%= link_to "退会する", customer_registration_path, class: "btn btn-outline-danger" ></div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+</div>
+<% end %>
