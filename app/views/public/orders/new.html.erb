@@ -1,6 +1,6 @@
 <div class="container mt-4">
   <h2>注文情報入力</h2>
-  <%= form_with model: @orders, url: orders_path, method: :get, local: true, class: "form-group" do |f| %>
+  <%= form_with model: @orders, url: confirm_orders_path, method: :get, local: true, class: "form-group" do |f| %>
                                   <!--public_orders_confirm_path-->
 
     <h4>支払い方法</h4>
@@ -30,6 +30,15 @@
       <!--フォームヘルパーの使い方で解説したセレクトボックスの内容をもとに作成しログイン中の顧客が登録した住所のみ表示できるように実装します。-->
       <!--フォームから送る情報は、ラジオボタンで「登録済み住所から選択」の部分が選択されたという情報と-->
       <!--該当アドレスの ID を送れるようにすればフォームの内容を処理する時に、スムーズに処理を行うことができます。-->
+
+<!--仮フォーム-->
+      <% sample = [
+        { postal_code: '1234567', address: '仮の住所1', name: '仮の名前1' },
+        { postal_code: '7654321', address: '仮の住所2', name: '仮の名前2' }
+      ] %>
+      <%= f.select :address_id, options_for_select(sample.map.with_index { |a, i| ["#{a[:postal_code]} #{a[:address]} #{a[:name]}", i + 1] }) %>
+
+
     </div>
 
     <div class="form-check">
