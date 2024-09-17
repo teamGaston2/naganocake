@@ -1,5 +1,5 @@
 class Public::CustomersController < ApplicationController
-  def show
+  def index
     @customer = current_customer
   end
 
