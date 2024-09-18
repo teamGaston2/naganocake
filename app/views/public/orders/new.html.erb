@@ -1,66 +1,68 @@
 <div class="container mt-4">
-  <h2>注文情報入力</h2>
-  <%= form_with model: @order, url: confirm_orders_path, method: :get, local: true, class: "form-group" do |f| %>
-                                  <!--public_orders_confirm_path-->
-
-    <h4>支払い方法</h4>
-    <div class="form-check">
-      <%= f.radio_button :payment_method, Order.payment_methods.key(0) %>
-      <%= f.label :payment_method_credit_card, Order.payment_methods_i18n[:credit_card] %>
-      <%= f.radio_button :payment_method, Order.payment_methods.key(1) %>
-      <%= f.label :payment_method_transfer, Order.payment_methods_i18n[:transfer]%>
+  <div class="row">
+    <div class="col-md-auto p-1 offset-md-1">
+      <div class="bg-dark text-white"><h2>注文情報入力</h2></div>
     </div>
-
-    <%= f.label :address, "お届け先の住所", class: "form-label" %>
-    <div class="form-check">
-      <%= f.radio_button :address, 0, checked: "checked", class: "form-check-input" %>
-      <%= f.label :address, "自宅（#{current_customer&.address || '住所未設定'}）", class: "form-check-label" %>
-<!--住所があれば"自宅（#{current_customer.address}）"でいい-->
-    </div>
-
-    <div class="form-check">
-      <%= f.radio_button :address, 1, class: "form-check-input" %>
-      <%= f.label :address, "登録済みの住所から", class: "form-check-label" %>
-      <% if current_customer&.addresses&.any? %>
-        <%= f.select :address_id, options_from_collection_for_select(current_customer.addresses, :id, :address_display) %>
-      <% else %>
-        <p>登録済みの配送先がありません</p>
-      <% end %>
-      <!--フォームヘルパーの使い方で解説したセレクトボックスの内容をもとに作成しログイン中の顧客が登録した住所のみ表示できるように実装します。-->
-      <!--フォームから送る情報は、ラジオボタンで「登録済み住所から選択」の部分が選択されたという情報と-->
-      <!--該当アドレスの ID を送れるようにすればフォームの内容を処理する時に、スムーズに処理を行うことができます。-->
-
-<!--仮フォーム-->
-      <% sample = [
-        { postal_code: '1234567', address: '仮の住所1', name: '仮の名前1' },
-        { postal_code: '7654321', address: '仮の住所2', name: '仮の名前2' }
-      ] %>
-      <%= f.select :address_id, options_for_select(sample.map.with_index { |a, i| ["#{a[:postal_code]} #{a[:address]} #{a[:name]}", i + 1] }) %>
-
-
-    </div>
-
-    <div class="form-check">
-      <%= f.radio_button :address, 2, class: "form-check-input" %>
-      <%= f.label :address, "新しいお届け先", class: "form-check-label" %>
-      <div class="form-group">
-        <%= f.label :post_number, "郵便番号(ハイフンなし)", class: "form-label mt-2" %>
-        <%= f.text_field :post_number, class: "form-control" %>
+  </div>
+  <%= form_with model: @order, url: confirm_orders_path, method: :post, local: true, class: "form-group" do |f| %>
+    <div class="row">
+      <div class="col-md-12">
+        <h4><b>支払方法</b></h4>
       </div>
-      <div class="form-group">
-        <%= f.label :address, "住所", class: "form-label mt-2" %>
-        <%= f.text_field :address, class: "form-control" %>
+      <div class="col-md-12 mx-2">
+        <div class="form-check">
+        <%= f.radio_button :payment_method, Order.payment_methods.key(0) %>
+        <%= f.label :payment_method_credit_card, Order.payment_methods_i18n[:credit_card] %>
+        <%= f.radio_button :payment_method, Order.payment_methods.key(1) %>
+        <%= f.label :payment_method_transfer, Order.payment_methods_i18n[:transfer]%>
+        </div>
       </div>
-      <div class="form-group">
-        <%= f.label :addressee, "宛名", class: "form-label mt-2" %>
-        <%= f.text_field :addressee, class: "form-control" %>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 my-3">
+        <h4><b>お届け先</b></h4>
+      </div>
+      <div class="col-md-12 mx-2">
+        <div class="form-check">
+          <%= f.radio_button :address_selection, '0', checked: "checked", class: "form-check-input" %>
+          <%= f.label :address_selection, "自宅（#{current_customer&.address || '住所未設定'}）", value: 0 , class: "form-check-label" %>
+          <!--住所があれば"自宅（#{current_customer.address}）"でいい-->
+          <div class="form-check">
+            <%= f.radio_button :address_selection, '1', class: "form-check-input" %>
+            <%= f.label :address_selection, "登録済みの住所から", value: 1, class: "form-check-label" %>
+            <% if current_customer&.addresses&.any? %>
+              <%= f.select :address_id, options_from_collection_for_select(current_customer.addresses, :id, :address_display) %>
+            <% else %>
+              <p>登録済みの配送先がありません</p>
+            <% end %>
+            <!--フォームヘルパーの使い方で解説したセレクトボックスの内容をもとに作成しログイン中の顧客が登録した住所のみ表示できるように実装します。-->
+            <!--フォームから送る情報は、ラジオボタンで「登録済み住所から選択」の部分が選択されたという情報と-->
+            <!--該当アドレスの ID を送れるようにすればフォームの内容を処理する時に、スムーズに処理を行うことができます。-->
+            <div class="form-check">
+              <%= f.radio_button :address_selection, '2', class: "form-check-input" %>
+              <%= f.label :address_selection, "新しいお届け先", value: 2, class: "form-check-label" %>
+              <div class="form-group">
+                <%= f.label :postal_code, "郵便番号(ハイフンなし)", class: "form-label mt-2" %>
+                <%= f.text_field :postal_code, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= f.label :address, "住所", class: "form-label mt-2" %>
+                <%= f.text_field :address, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= f.label :name, "宛名", class: "form-label mt-2" %>
+                <%= f.text_field :name, class: "form-control" %>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-    <div class="text-center">
-      <%= f.submit "確認画面へ進む", class: "btn btn-primary" %>
-      <!--<button type="button" class="btn btn-primary">Primary</button>-->
-    </div>
+  <div class="text-center">
+    <%= f.submit "確認画面へ進む", class: "btn btn-primary" %>
+    <!--<button type="button" class="btn btn-primary">Primary</button>-->
+  </div>
   <% end %>
 </div>
