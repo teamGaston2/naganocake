@@ -47,7 +47,7 @@ class Public::OrdersController < ApplicationController
     @order_details = OrderDetail.all
     @shipping = 800
     @total = 0
-    @payment_methods = params[:order][:payment_method]
+    # @payment_methods = params[:order][:payment_method]
     @payment_method_jp = I18n.t("activerecord.attributes.order.payment_method.#{@payment_method}")
     # @addressee = Address.find(params[:id])
   end
