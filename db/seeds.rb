@@ -14,11 +14,11 @@ Admin.create!(
 Order.create!(
    order_id: '1' ,
    customer_id: '1' ,
-   postal_code: '1' ,
+   postal_code: '123456' ,
    address: 'test' ,
    name: 'test' ,
    shipping_cost: '800' ,
    total_payment: '9000' ,
    payment_method: 'transfer' ,
-   order_status: '1'
+   order_status: 'making'
    )
