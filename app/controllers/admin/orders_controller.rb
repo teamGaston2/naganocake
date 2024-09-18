@@ -2,17 +2,17 @@ class Admin::OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @order_details = @order.order_details
-    @items = @order_details.map(&:item)
     @customer = @order.customer
   end
 
   def update
-    @order = Order.find([:id])
+    @order = Order.find(params[:id])
     if @order.update(order_params)
        flash[:notice] = "注文ステータスを変更しました"
-       redirect_to request.referrer
+       redirect_to admin_order_path(@order)
     else
-       redirect_to request.referrer
+       flash[:notice] = "注文ステータス変更が失敗しました"
+       redirect_to admin_order_path(@order)
     end
   end
   
