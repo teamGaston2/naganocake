@@ -16,9 +16,37 @@
           </tr>
         </thead>
         <tbody>
-          <% @order_details.each do |f| %>
-          <% end %>
+          <tr>
+            <% @order_details.each do |f| %>
+              <td><%= f.item_id %></td>
+              <td><%= f.subtotal %></td>
+              <td><%= f.amount %></td>
+              <td><%= f.subtotal %></td>
+            <% end %>
+          </tr>
         </tbody>
+      </table>
+    </div>
+    <div class="col-md-2 mt-2">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>送料</th>
+            <td><%= @shipping %></td>
+          </tr>
+          <tr>
+            <th>商品合計</th>
+            <td>
+              <% @order_details.each do |order_details| %>
+                <%= @total += order_details %>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th>請求金額</th>
+            <td><%= @total + @shipping %></td>
+          </tr>
+        </thead>
       </table>
     </div>
   </div>

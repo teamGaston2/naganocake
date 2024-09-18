@@ -44,6 +44,9 @@ class Public::OrdersController < ApplicationController
 
   def confirm
     @order = Order.new(order_params)
+    @order_details = OrderDetail.all
+    @shipping = 800
+    @total = 0
   end
 
   private
