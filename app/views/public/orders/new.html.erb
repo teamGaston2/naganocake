@@ -1,6 +1,6 @@
 <div class="container mt-4">
   <h2>注文情報入力</h2>
-  <%= form_with model: @orders, url: confirm_orders_path, method: :get, local: true, class: "form-group" do |f| %>
+  <%= form_with model: @order, url: confirm_orders_path, method: :get, local: true, class: "form-group" do |f| %>
                                   <!--public_orders_confirm_path-->
 
     <h4>支払い方法</h4>
@@ -10,6 +10,7 @@
       <%= f.radio_button :payment_method, Order.payment_methods.key(1) %>
       <%= f.label :payment_method_transfer, Order.payment_methods_i18n[:transfer]%>
     </div>
+
     <%= f.label :address, "お届け先の住所", class: "form-label" %>
     <div class="form-check">
       <%= f.radio_button :address, 0, checked: "checked", class: "form-check-input" %>

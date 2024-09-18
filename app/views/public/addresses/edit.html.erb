@@ -1,3 +1,32 @@
 
-<h1>Public::Addresses#edit</h1>
-<p>Find me in app/views/public/addresses/edit.html.erb</p>
+  <%= render "public/shared/error_messages", resource: @address %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>会員情報編集</h2>
+      </div>
+    </div>
+    <%= form_with model: @address, method: :patch do |f| %>
+      <div class="row">
+        <div class="col-3"><label for="inputPost_number">郵便番号（ハイフンなし)</label></div>
+        <div class="col-3"><%= f.text_field :postal_code, autofocus: true, id:"inputPost_number" %></div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><label for="inputAddress">住所</label></div>
+        <div class="col-6"><%= f.text_field :address, size: 58, autofocus: true, id:"inputAddress" %></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><label for="inputName">氏名</label></div>
+        <div class="col-3"><%= f.text_field :name, autofocus: true, id:"inputName" %></div>
+        </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3 py-1"><%= f.submit "編集内容を保存", class: "btn btn-success" %></div>
+        <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <% end %>
+  </div>

@@ -5,7 +5,7 @@ class Public::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_account_update_params, only: [:update]
 
    def after_sign_up_path_for(resource)
-     customers_path
+     my_page_path
    end
 
   protected
@@ -13,8 +13,7 @@ class Public::RegistrationsController < Devise::RegistrationsController
   def configure_sign_up_params
      devise_parameter_sanitizer.permit(:sign_up, keys:[
        :first_name, :last_name, :first_name_kana, :last_name_kana,
-       :email, :post_code, :address, :telephone_number, :password,
-       :password_confirmation])
+      :postal_code, :address, :telephone_number])
   end
 
   # GET /resource/sign_up
