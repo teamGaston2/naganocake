@@ -18,7 +18,19 @@ class Public::OrdersController < ApplicationController
 
   def show
     # @order = Order.find(params[:id]) データがない！！！！！
-
+    @order = {
+      order_id: 1,
+      customer_id: 2,
+      postal_code: "0000000",
+      address: "Japan",
+      name: "railsc",
+      shipping_cost: 800,
+      total_payment: 1800,
+      payment_method: :credit_card,
+      order_status: :making,
+      created_at: Time.current,
+      updated_at: Time.current,
+    }
 
   end
 
