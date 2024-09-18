@@ -1,5 +1,5 @@
 <div class="container text-center">
-  <%= form_with model: @item, local: true do |f| %>
+  <%= form_with model: @item, url: admin_items_path, method: :post, local: true do |f| %>
     <div class="row">
       <div class="col-8 text-left">
         <h2>新規商品登録</h2>
