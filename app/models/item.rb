@@ -11,8 +11,8 @@ class Item < ApplicationRecord
   end
 
 
-  enum is_active: { 販売中: 0, 販売停止中: 1 }
-
+  enum is_active: { 販売停止中: 0, 販売中: 1 }
+  
   belongs_to :genre
   has_many :order_details , dependent: :destroy
 
