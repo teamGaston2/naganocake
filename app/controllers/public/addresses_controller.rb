@@ -18,19 +18,14 @@ def index
 end
 
 def edit
-  @customer = current_customer
-  if @customer == current_customer
-    render :edit
-  else
-    redirect_to customer_path(current_user)
-  end
+  @address = Address.find(params[:id])
 end
 
 def update
   @address = Address.find(params[:id])
-    if address.update(address_params)
+    if @address.update(address_params)
       flash[:notice] = "変更を保存しました。"
-      redirect_to address_path
+      redirect_to addresses_path
     else
       render :edit
     end
@@ -46,6 +41,5 @@ private
   def address_params
     params.require(:address).permit(:name, :postal_code, :address)
   end
-
 
 end

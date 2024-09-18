@@ -7,10 +7,10 @@
         <h2>会員情報編集</h2>
       </div>
     </div>
-    <%= form_with model: @address do |f| %>
+    <%= form_with model: @address, method: :patch do |f| %>
       <div class="row">
         <div class="col-3"><label for="inputPost_number">郵便番号（ハイフンなし)</label></div>
-        <div class="col-3"><%= f.text_field :post_number, autofocus: true, id:"inputPost_number" %></div>
+        <div class="col-3"><%= f.text_field :postal_code, autofocus: true, id:"inputPost_number" %></div>
         <div class="col-3"></div>
       </div>
       <div class="row">
@@ -19,9 +19,9 @@
       </div>
       <div class="row">
         <div class="col-3"><label for="inputName">氏名</label></div>
-        <div class="col-3"><%= f.text_field :addressee, autofocus: true, id:"inputlastName" %></div>
+        <div class="col-3"><%= f.text_field :name, autofocus: true, id:"inputName" %></div>
         </div>
-      
+
       <div class="row">
         <div class="col-3"></div>
         <div class="col-3 py-1"><%= f.submit "編集内容を保存", class: "btn btn-success" %></div>

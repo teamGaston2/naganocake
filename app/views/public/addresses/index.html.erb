@@ -1,10 +1,10 @@
-
-  <%#= render "public/shared/error_messages" %>
+  
+  <%#= render "public/shared/error_messages", resource: resource %>
 
 <div class="container">
  <div class="row">
       <div class="col">
-        <h2>搬送先登録/一覧</h2>
+        <h2>配送先登録/一覧</h2>
       </div>
   </div>
       <%= form_with model: @address do |f| %>
