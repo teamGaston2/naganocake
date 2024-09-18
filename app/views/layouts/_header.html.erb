@@ -3,7 +3,7 @@
 
       <nav>
       <% if customer_signed_in? %>
-      <div class="d-flex justify-content-end">
+      <div class="d-flex justify-content-end align-items-center mt-n4">
       <ul class="navbar-nav" style="flex-direction: row;">
         <li>
           <%=  link_to my_page_path(current_customer.id) , class:"nav-link text-light" do %>
@@ -28,7 +28,7 @@
         </ul>
         </dev>
         <% elsif admin_signed_in? %>
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-end align-items-center mt-n4 ">
       <ul class="navbar-nav" style="flex-direction: row;">
         <li>
           <%= link_to  admin_items_path , class:"nav-link text-light" do %>

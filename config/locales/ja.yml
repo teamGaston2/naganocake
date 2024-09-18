@@ -4,6 +4,18 @@ ja:
       payment_method:
         credit_card: "クレジットカード"
         transfer: "銀行振込"
+      order_status:
+        waiting_payment: "入金待ち"
+        payment_confirmation: "入金確認"
+        making: "製作中"
+        preparation_shipping: "発送準備中"
+        shipped: "発送済み"
+    order_detail:
+      making_status:
+        making_impossible: "製作不可"
+        waiting_production: "製作待ち"
+        making: "製作中"
+        production_completed: "製作完了"
   activerecord:
     errors:
       messages:
@@ -185,3 +197,7 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
+    item:
+      is_active:
+        active: "販売中"
+        inactive: "販売停止中"

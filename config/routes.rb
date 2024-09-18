@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
   devise_for :customers,skip: [:passwords], controllers: {
-   registrations: 'public/registrations',
-     sessions: 'public/sessions'
-   }
+  registrations: 'public/registrations',
+    sessions: 'public/sessions'
+  }
 
    devise_for :admins, controllers: {
     sessions: 'admin/sessions'
@@ -22,13 +22,13 @@ Rails.application.routes.draw do
    scope module: :public do
     root to: 'homes#top'
     get '/about' => 'homes#about' ,as: 'about'
-    
+
     get '/customers/my_page' => 'customers#show' ,as: 'my_page'
     get '/customers/information/edit' => 'customers#edit' ,as: 'information_edit'
     get '/customers/unsubscribe' => 'customers#unsubscribe' ,as: 'unsubscribe'
     patch '/customers/information' => 'customers#update' ,as: 'information'
     patch '/customers/withdraw' => 'customers#withdraw' ,as: 'withdraw'
-    
+
     resources :items, only: [:index, :show]
     resources :cart_items, only: [:index, :create, :update, :destroy] do
       collection do
@@ -38,6 +38,7 @@ Rails.application.routes.draw do
     resources :orders, only: [:new, :create, :index, :show] do
       collection do
         post 'confirm'
+        get 'confirm'
         get 'thanks'
       end
     end
