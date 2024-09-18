@@ -7,6 +7,11 @@ class Public::OrdersController < ApplicationController
       { post_number: '1234567', adress: '仮の住所1', addressee: '仮の名前1' },
       { post_number: '7654321', adress: '仮の住所2', addressee: '仮の名前2' }
     ]
+
+order = Order.create(order_id: "1", customer_id: "2", postal_code: "1000", address: "Japan", name: "rails c", shipping_cost: "800", total_payment: "1800", payment_method: :credit_card, order_status: :making, create_at: "Thu, 19 Sep 2024 03:04:26.251018397 JST +09:00", update_at: "Thu, 19 Sep 2024 03:04:26.251018397 JST +09:00")
+order.save
+order.errors.full_messages
+Order.create(order_id: 1,customer_id: 2,postal_code: "0000000",address: "Japan",name: "railsc",shipping_cost: 800,total_payment: 1800,payment_method: :credit_card,order_status: :making,created_at: Time.now,updated_at: Time.now)
   end
 
   def thanks
