@@ -20,7 +20,7 @@
         <td><%= item.price.to_s(:delimited) %></td>
         <td><%= item.genre.name %></td>
         <td class="<%= item.is_active == "販売中" ? 'text-success' : 'text-secondary' %>">
-          <% if item.is_active == "販売中" %>
+          <% if item.is_active == "販売中" %>=>
             販売中
           <% else %>
             販売停止中
