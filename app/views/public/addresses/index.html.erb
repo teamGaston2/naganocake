@@ -1,6 +1,5 @@
 
-<%= form_with model: @address do |f| %>
-  <%#= render "public/shared/error_messages", resource: resource %>
+  <%#= render "public/shared/error_messages" %>
 
 <div class="container">
  <div class="row">
@@ -8,10 +7,10 @@
         <h2>搬送先登録/一覧</h2>
       </div>
   </div>
-
+      <%= form_with model: @address do |f| %>
     <div class="row">
-      <div class="col-3"><%= f.label :post_number, "郵便番号（ハイフンなし）" %></div>
-      <div class="col-3"><%= f.text_field :post_number %></div>
+      <div class="col-3"><%= f.label :postal_code, "郵便番号（ハイフンなし）" %></div>
+      <div class="col-3"><%= f.text_field :postal_code %></div>
     </div>
 
     <div class="row">
@@ -21,32 +20,29 @@
 
     <div class="row">
       <div class="col-3">宛名</div>
-      <div class="col-5"><%= f.text_field :addressee %></div>
+      <div class="col-5"><%= f.text_field :name %></div>
       <div class="col-3 py-1"><%= f.submit "新規登録", class: "btn btn-success" %></div>
     </div>
   <% end %>
 
-
-  <h4>どんどんどんぐりころころ</h4>
-
   <table class="table table-bordered">
-    <% @addresses.each do |address| %>
     <thead>
       <tr>
-      <th scope="row">郵便番号</th>
-      <th scope="row">住所</th>
-      <th scope="row">宛名</th>
+      <th scope="row" style="width: 15%">郵便番号</th>
+      <th scope="row" style="width: 35%">住所</th>
+      <th scope="row" style="width: 15%">宛名</th>
+      <th scope="row" style="width: 15%"></th>
     </tr>
     </thead>
   <tbody>
+    <% @addresses.each do |address| %>
     <tr>
-      <td><%= post_number %></td>
-      <td scope="row"><%= address %></td>
-      <td colspan="4"><%=addressee %></td>
-      <th scope="row"><%= link_to edit_address_path(address.id), class: "btn btn-success" do %>
+      <td><%= address.postal_code %></td>
+      <td><%= address.address %></td>
+      <td><%= address.name %></td>
+      <th><%= link_to edit_address_path(address.id), class: "btn btn-success" do %>
                       編集する<% end %>
-      </th>
-      <th scope="row"><%= link_to address_path(address.id), class: "btn btn-danger", method: :delete, "data-confirm" => "本当に消しますか?" do %>
+      <%= link_to address_path(address.id), class: "btn btn-danger", method: :delete, "data-confirm" => "本当に消しますか?" do %>
                       削除する<% end %>
       </th>
     </tr>
