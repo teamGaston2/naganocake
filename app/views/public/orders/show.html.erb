@@ -1,2 +1,68 @@
-<h1>Public::Orders#show</h1>
-<p>Find me in app/views/public/orders/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-auto p-1 offset-md-1">
+      <div class="bg-dark text-white"><h2>注文履歴詳細</h2></div>
+    </div>
+    <div class="col-md-8 mt-1">
+      <table>
+        <h3>注文情報</h3>
+        <th>注文日</th>
+        <td><%= @order.created_at.strftime("%Y/%m/%d") %></td>
+        <th>配送先</th>
+        <td><%= @order.address_display %></td>
+        <th>支払方法</th>
+        <td><%= @order.payment_method %></td>
+        <th>ステータス</th>
+        <td><%= @order.order_status %></td>
+    </table>
+    </div>
+  </div>
+</div>
+
+      <th>商品名</th>
+      <th>単価(税込み)</th>
+      <th>数量</th>
+      <th>小計</th>
+      <th>製作ステータス</th>
+      <td>なし</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @order_details.each do |order_detail| %>
+      <tr>
+        <td><%= order_detail.item.name %></td>
+        <td><%= order_detail.price %></td>
+        <td><%= order_detail.amountexit %></td>
+        <td><%= order_detail.subtotal %></td>
+        <td></td>
+        <td>
+          <%= form_with model: order_detail, url: admin_order_detail_path(order_detail), method: :patch, local: true do |f| %>
+            <%= f.select :making_status, OrderDetail.making_statuses_i18n.keys.map { |status| [I18n.t("enums.order_detail.making_status.#{status}"), status] }, {}, class: "form-control" %>
+            <%= f.submit "更新", class: "btn btn-success" %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th>商品合計</th>
+      <td><%= @order.total_payment - @order.shipping_cost %>円</td>
+    </tr>
+    <tr>
+      <th>送料</th>
+      <td><%= @order.shipping_cost %>円</td>
+    </tr>
+    <tr>
+      <th>請求金額合計</th>
+      <td><%= @order.total_payment %>円</td>
+    </tr>
+  </tbody>
+</table>
