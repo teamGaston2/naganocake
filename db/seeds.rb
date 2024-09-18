@@ -23,10 +23,10 @@ Admin.create!(
 #    order_status: 'making'
 #    )
 
-# OrderDetail.create!(
-#     order_id: '1',
-#     item_id: '1',
-#     price: '100',
-#     amount: '5',
-#     making_status: 0
-#   )
+OrderDetail.create!(
+    order_id: '1',
+    item_id: '1',
+    price: '100',
+    amount: '5',
+    making_status: 0
+  )
