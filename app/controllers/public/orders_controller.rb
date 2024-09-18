@@ -17,11 +17,14 @@ class Public::OrdersController < ApplicationController
   end
 
   def show
-    @order = Order.find(params[:id])
+    # @order = Order.find(params[:id]) データがない！！！！！
+
+
   end
 
   def confirm
     @order = Order.new(order_params)
+    # @order_price = Order.all.sum(:price) 使えるかも
     @order_details = OrderDetail.all
     @shipping = 800
     @total = 0
