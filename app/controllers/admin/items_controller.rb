@@ -1,4 +1,5 @@
 class Admin::ItemsController < ApplicationController
+   before_action :set_genres, only: [:new, :create]
   def index
     @items = Item.all
     @item_page = Item.page(params[:page]).per(10)
@@ -34,6 +35,11 @@ class Admin::ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:item).permit(:name, :introduction, :price, :is_active, :image)
+    params.require(:item).permit(:name, :introduction, :price, :is_active, :image, :genre_id)
   end
+  
+  def set_genres
+    @genres = Genre.all
+  end
+  
 end

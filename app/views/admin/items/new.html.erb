@@ -22,6 +22,12 @@
           <div class="col-3"><%= f.text_area :introduction, class: "form-control fs-4" %></div>
         </div>
         <div class="row mb-3">
+          <div class="col-3 fs-4"><%= f.label :genre_id, "ジャンル" %></div>
+            <div class="col-6">
+              <%= f.select :genre_id, options_from_collection_for_select(@genres, :id, :name), { include_blank: '選択してください' }, class: "form-control fs-4" %>
+            </div>
+        </div>
+        <div class="row mb-3">
           <div class="col-3 fs-4"><%= f.label :price, "税抜き価格" %></div>
           <div class="col-3">
             <div class="input-group">
@@ -37,8 +43,8 @@
           <div class="col-5">
             <% Item.is_actives.keys.each do |status| %>
               <div class="form-check form-check-inline">
-                <%= f.radio_button :is_active, status, id: "is_active_i18n_#{status}", class: "form-check-input fs-4" %>
-                <%= f.label "is_active_#{status}", status.humanize, class: "form-check-label fs-4" %>
+                <%= f.radio_button :is_active, status, id: "is_active_#{status}", class: "form-check-input" %>
+                <%= f.label "is_active_#{status}", status.humanize, class: "form-check-label" %>
               </div>
             <% end %>
           </div>
