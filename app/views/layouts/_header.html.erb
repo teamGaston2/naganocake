@@ -1,0 +1,95 @@
+<header>
+  <%= link_to "ながのCAKE" , root_path , class:"nav-link"%>
+
+      <nav>
+      <% if customer_signed_in? %>
+      <div class="d-flex justify-content-end align-items-center mt-n4">
+      <ul class="navbar-nav" style="flex-direction: row;">
+        <li>
+          <%=  link_to my_page_path(current_customer.id) , class:"nav-link text-light" do %>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">マイページ</button>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to  items_path , class:"nav-link text-light" do %>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">商品一覧</button>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to cart_items_path , class:"nav-link text-light" do %>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">カート</button>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to destroy_customer_session_path, method: :delete, class:"nav-link text-light" do%>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">ログアウト</button>
+          <% end %>
+        </li>
+        </ul>
+        </dev>
+        <% elsif admin_signed_in? %>
+        <div class="d-flex justify-content-end align-items-center mt-n4 ">
+      <ul class="navbar-nav" style="flex-direction: row;">
+        <li>
+          <%= link_to  admin_items_path , class:"nav-link text-light" do %>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">商品一覧</button>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to admin_customers_path , class:"nav-link text-light" do %>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">会員一覧</button>
+          <% end %>
+        </li>
+        <li>
+          <%=  link_to admin_root_path , class:"nav-link text-light" do %>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">注文一覧</button>
+          <% end %>
+        </li>
+        <li>
+          <%=  link_to admin_genres_path , class:"nav-link text-light" do %>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">ジャンル一覧</button>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to destroy_admin_session_path, method: :delete, class:"nav-link text-light" do%>
+            <button type="button" class="btn btn-outline-secondary" style="color: black; font-weight: 600; border-color: #d3d3d3;">ログアウト</button>
+          <% end %>
+        </li>
+        </ul>
+        </div>
+      <% else %>
+      <div class="d-flex justify-content-end align-items-center mt-n4">
+      <ul class="navbar-nav" style="flex-direction: row;">
+        <li>
+          <%= link_to about_path  , class:"nav-link text-light" do %>
+            <button type="button" class="btn btn-outline-secondary mr-5" style="color: black; font-weight: 600; border-color: #d3d3d3;">About</button>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to  items_path , class:"nav-link text-light"  do %>
+            <button type="button" class="btn btn-outline-secondary mr-5" style="color: black; font-weight: 600; border-color: #d3d3d3;">商品一覧</button>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to new_customer_registration_path , class:"nav-link text-light"  do %>
+            <button type="button" class="btn btn-outline-secondary mr-5" style="color: black; font-weight: 600; border-color: #d3d3d3;">新規登録</button>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to  new_customer_session_path , class:"nav-link text-light"  do %>
+            <button type="button" class="btn btn-outline-secondary mr-5" style="color: black; font-weight: 600; border-color: #d3d3d3;">ログイン</button>
+          <% end %>
+        </li>
+      </ul>
+      </div>
+
+        <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+
+
+      <% end %>
+      </nav>
+    </header>
