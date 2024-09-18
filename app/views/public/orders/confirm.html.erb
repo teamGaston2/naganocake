@@ -1,1 +1,65 @@
-orders#confirm
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="p-3 mb-2 bg-dark text-white"><h4>注文情報確認画面</h4></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 mt-1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>商品名</th>
+            <th>単価(税込)</th>
+            <th>数量</th>
+            <th>小計</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <% @order_details.each do |f| %>
+              <td><%= f.item_id %></td>
+              <td><%= f.subtotal %></td>
+              <td><%= f.amount %></td>
+              <td><%= f.subtotal %></td>
+            <% end %>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-2 mt-2">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>送料</th>
+            <td><%= @shipping %></td>
+          </tr>
+          <tr>
+            <th>商品合計</th>
+            <td>
+              <% @order_details.each do |order_details| %>
+                <%= @total += order_details %>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th>請求金額</th>
+            <td><%= @total + @shipping %></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"><h3>支払方法</h3></div>
+    <div class="col-md-5"><%= @payment_methods_jp %></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"><h3>配送先</h3></div>
+    <!--<div class="col-md-5"><%= @addressee %></div>-->
+  </div>
+  <div class="text-center">
+    <!--%= f.submit "注文を確定する", class: "btn btn-success" %>-->
+    <button type="button" class="btn btn-success"><%= link_to '注文を確定する', thanks_orders_path %></button>
+  </div>
+</div>
