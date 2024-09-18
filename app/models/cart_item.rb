@@ -4,4 +4,5 @@ class CartItem < ApplicationRecord
     item.with_tax_price * amount
   end
   
+  has_many :items, dependent: :destroy
 end
