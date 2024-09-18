@@ -4,6 +4,13 @@ class Customer < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+
+  validates :password, presence: true, length: { minimum: 6 }
+  has_many :orders , dependent: :destroy 
+  def full_name
+    first_name + last_name
+  end
+  
   #validates :password, presence: true, length: { minimum: 6 }
 
   def full_name
@@ -24,7 +31,7 @@ class Customer < ApplicationRecord
   validates :email, presence: true
   validates :encrypted_password, presence: true
 
-
   has_many :addresses
   has_many :cart_items
+  
 end
