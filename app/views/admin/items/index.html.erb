@@ -18,7 +18,6 @@
         <td><%= item.price.to_s(:delimited) %></td>
         <td><%= item.genre.name %></td>
         <td class="<%= item.is_active == "active" ? 'text-success' : 'text-secondary' %>">
-          <%= item.is_active_i18n %>
 
           <% if item.is_active == "active" %>
             販売中
