@@ -1,12 +1,6 @@
 class Public::OrdersController < ApplicationController
   def new
     @order = Order.new
-    # byebug
-    # ↓仮データ↓
-    @sample = [
-      { post_number: '1234567', adress: '仮の住所1', addressee: '仮の名前1' },
-      { post_number: '7654321', adress: '仮の住所2', addressee: '仮の名前2' }
-    ]
   end
 
   def thanks

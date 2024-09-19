@@ -39,13 +39,13 @@
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-3 fs-4"><%= f.label :is_active, "販売ステータス" %></div>
+          <div class="col-3 fs-4"><%= f.label :is_active_selection, "販売ステータス" %></div>
           <div class="col-5">
             <div class="form_check form-check-inline">
-              <%= f.radio_button :is_active, Item.is_actives.key(0) %>
-              <%= f.label :is_active_inactive, Item.is_actives_i18n[:inactive] %>
+              <%= f.radio_button :is_active_selection, Item.is_actives.key(0) %>
+              <%= f.label :is_active_selection, Item.is_actives_i18n[:inactive] %>
               <%= f.radio_button :is_active, Item.is_actives.key(1) %>
-              <%= f.label :is_active_active, Item.is_actives_i18n[:active] %>
+              <%= f.label :is_active_selection, Item.is_actives_i18n[:active] %>
             </div>
           </div>
         </div>
