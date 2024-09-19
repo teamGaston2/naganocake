@@ -11,7 +11,7 @@ class Item < ApplicationRecord
   end
 
 
-  enum is_active: { inactive: 0, active: 1 }
+
   
   belongs_to :genre
   has_many :order_details , dependent: :destroy
