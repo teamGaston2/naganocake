@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Admin.create!(
-    email: 'test@test.com',
-    password: "testhoge"
-)
+# Admin.create!(
+#    email: 'test@test.com',
+#    password: "testhoge"
+# )
 
 # Order.create!(
 #    order_id: '1' ,
@@ -22,11 +22,11 @@ Admin.create!(
 #    payment_method: 'transfer' ,
 #    order_status: 'making'
 #    )
-
+   
 OrderDetail.create!(
     order_id: '1',
     item_id: '1',
     price: '100',
-    amount: '5',
+    amountexit: '5',
     making_status: 0
-  )
+   )
