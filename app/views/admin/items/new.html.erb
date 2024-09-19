@@ -16,7 +16,6 @@
         <h2>新規商品登録</h2>
       </div>
     </div>
-
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="row mb-3">
@@ -49,8 +48,9 @@
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-3 fs-4"><%= f.label :is_active, "販売ステータス" %></div>
+          <div class="col-3 fs-4"><%= f.label :is_active_selection, "販売ステータス" %></div>
           <div class="col-5">
+
             <div class="form-check form-check-inline">
               <%= f.radio_button :is_active, true, id: "is_active_true", class: "form-check-input fs-4" %>
               <%= f.label "is_active_true", "販売中", class: "form-check-label fs-4" %>
