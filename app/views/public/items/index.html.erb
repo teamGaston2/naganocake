@@ -1,9 +1,25 @@
-<h1>商品一覧</h1>
-<span>全<%= @items.count %>件</span>
-<div class="items_index">
-  <% @items.each do |f| %>
-    <%= link_to(image_tag(f.get_image), item_path) %>
-    <%= f.text_name %>
-    <%= f.price %>
-  <% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <%= render 'public/shared/sidebar', title: 'ジャンル検索', genres: @genres %>
+    </div>
+    <div class="col-md-9">
+      <h1>商品一覧</h1>
+      <span>全<%= @items.count %>件</span>
+      <div class="row">
+        <% @items.each do |f| %>
+          <div class="col-md-3">
+            <%= link_to item_path(f), class: "card h-100 d-flex flex-column p-3" do %>
+              <%= image_tag(f.get_image(200, 200), class: "card-img-top") %>
+              <div class="card-body flex-grow-1">
+                <div class="card-text"><%= f.name %></div>
+                <div class="card-text"><%= f.price %>円</div>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>

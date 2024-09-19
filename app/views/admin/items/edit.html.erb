@@ -1,43 +1,41 @@
 <h3>商品編集</h3>
 
 <div>
-  <div>
-  <%= form_with model:@item, url: admin_item_path(@item), method: :patch, local: true do |f| %>
-  
-  <div> 
-    <%= f.label :image, "商品画像" %>
-    <%= f.file_field :image, required: true %>
-  </div>
-  
-  <div>
-    <%= f.label :name, "商品名" %>
-    <%= f.text_field :name, required: true %>
-  </div>
-  
-  <div>
-    <%= f.label :introduction, "商品説明" %>
-    <%= f.text_area :introduction, required: true %>
-  </div>
-  
-  <div>
-    <%= f.label :genre_id, "ジャンル" %>
-    <%= f.collection_select :genre_id, Genre.all, :id, :name %>
-  </div>
-  
-  <div>
-    <%= f.label :price, "税抜価格" %>
-    <%= f.number_field :price, required: true %>円
+  <%= form_with model: @item, url: admin_item_path(@item), method: :patch, local: true do |f| %>
+    <div>
+      <%= f.label :image, "商品画像" %>
+      <%= f.file_field :image, required: true %>
+     </div>
+
+    <div>
+      <%= f.label :name, "商品名" %>
+      <%= f.text_field :name, required: true %>
     </div>
-  
-  <div>
-    <%= f.label :is_active, "販売ステータス" %>
-    <%= f.radio_button :is_active, true %>販売中 <%= f.radio_button :is_active, false %>販売停止中
-  </div>
-  
-  <div>
-　  <%= f.submit "変更を保存" %>
-  </div>
-  
+
+    <div>
+      <%= f.label :introduction, "商品説明" %>
+      <%= f.text_area :introduction, required: true %>
+    </div>
+
+    <div>
+      <%= f.label :genre_id, "ジャンル" %>
+      <%= f.collection_select :genre_id, Genre.all, :id, :name %>
+    </div>
+
+    <div>
+      <%= f.label :price, "税抜価格" %>
+      <%= f.number_field :price, required: true %>円
+    </div>
+
+    <div>
+      <%= f.label :is_active, "販売ステータス" %>
+      <%= f.radio_button :is_active, "true" %> <%= label_tag "販売中" %>
+      <%= f.radio_button :is_active, "false" %> <%= label_tag "販売停止中" %>
+    </div>
+
+    <div>
+      <%= f.submit "変更を保存" %>
+    </div>
   <% end %>
 </div>
 

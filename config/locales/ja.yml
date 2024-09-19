@@ -16,6 +16,11 @@ ja:
         waiting_production: "製作待ち"
         making: "製作中"
         production_completed: "製作完了"
+    item:
+      is_active:
+        active: "販売中"
+        inactive: "販売停止中"
+
   activerecord:
     errors:
       messages:
@@ -196,8 +201,5 @@ ja:
       default: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
-    pm: 午後
-    item:
-      is_active:
-        active: "販売中"
-        inactive: "販売停止中"
+      pm: 午後
+

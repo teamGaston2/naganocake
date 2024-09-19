@@ -1,12 +1,6 @@
 class Public::OrdersController < ApplicationController
   def new
     @order = Order.new
-    # byebug
-    # ↓仮データ↓
-    @sample = [
-      { post_number: '1234567', adress: '仮の住所1', addressee: '仮の名前1' },
-      { post_number: '7654321', adress: '仮の住所2', addressee: '仮の名前2' }
-    ]
   end
 
   def thanks
@@ -62,17 +56,5 @@ class Public::OrdersController < ApplicationController
       redirect_to new_order_path and return
     end
 
-  end
-
-  private
-  def order_params
-    # params.require(:order).permit(:payment_method, :postal_code, :address, :name)
-    # サンプルデータ
-    {
-    payment_method: 0,
-    postal_code: '1234567',
-    address: '仮の住所1',
-    name: '仮の名前1'
-    }
   end
 end
