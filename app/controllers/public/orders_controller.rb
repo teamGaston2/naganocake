@@ -63,16 +63,4 @@ class Public::OrdersController < ApplicationController
     end
 
   end
-
-  private
-  def order_params
-    # params.require(:order).permit(:payment_method, :postal_code, :address, :name)
-    # サンプルデータ
-    {
-    payment_method: 0,
-    postal_code: '1234567',
-    address: '仮の住所1',
-    name: '仮の名前1'
-    }
-  end
 end
