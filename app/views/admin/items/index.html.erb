@@ -19,7 +19,11 @@
         <td><%= link_to item.name , admin_item_path(item) %></td>
         <td><%= item.price.to_s(:delimited) %></td>
         <td><%= item.genre.name %></td>
-        <td class="<%= item.is_active == "販売中" ? 'text-success' : 'text-secondary' %>">
+        <td class="<%= item.is_active == "active" ? 'text-success' : 'text-secondary' %>">
+          <%= item.is_active_i18n %>
+        </td>
+
+
           <% if item.is_active == "販売中" %>=>
             販売中
           <% else %>
@@ -27,6 +31,7 @@
           <% end %>
         </td>
       </tr>
+      <!--%= item.label :is_active_active, Item.is_actives_i18n[:active]%>-->
     <% end %>
   </tbody>
 </table>
