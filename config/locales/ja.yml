@@ -20,6 +20,7 @@ ja:
       is_active:
         active: "販売中"
         inactive: "販売停止中"
+
   activerecord:
     errors:
       messages:
@@ -201,3 +202,4 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
       pm: 午後
+
