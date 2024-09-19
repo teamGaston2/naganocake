@@ -23,12 +23,12 @@
     <tr>
       <th>販売ステータス</th>
       <th class="<%= @item.is_active ? 'text-success' : 'text-secondary' %>">
-          <% if @item.is_active %>
-            販売中
-          <% else %>
-            販売停止中
-          <% end %>
-        </th>
+        <% if @item.is_active %>
+          販売中
+        <% else %>
+          販売停止
+        <% end %>
+      </th>
     </tr>
   </tbody>
 </table>

@@ -11,4 +11,9 @@ class Public::ItemsController < ApplicationController
     # @genres = Genre.all
     @genres = ['ケーキ', '焼き菓子', 'プリン', 'キャンディ']
   end
+
+  private
+  def get_image(width, height)
+    params.require(:book).permit(:title, :body, :star)
+  end
 end
