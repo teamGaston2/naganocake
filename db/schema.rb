@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_09_17_092755) do
+ActiveRecord::Schema.define(version: 2024_09_19_081202) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -42,9 +42,9 @@ ActiveRecord::Schema.define(version: 2024_09_17_092755) do
 
   create_table "addresses", force: :cascade do |t|
     t.integer "customer_id"
-    t.string "postal_code"
-    t.string "address"
-    t.string "name"
+    t.string "post_number"
+    t.string "adress"
+    t.string "addressee"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -70,16 +70,25 @@ ActiveRecord::Schema.define(version: 2024_09_17_092755) do
   end
 
   create_table "customers", force: :cascade do |t|
-    t.string "last_name", null: false
-    t.string "first_name", null: false
-    t.string "last_name_kana", null: false
-    t.string "first_name_kana", null: false
-    t.string "postal_code", null: false
-    t.string "address", null: false
-    t.string "telephone_number", null: false
-    t.boolean "is_active", default: true, null: false
+
+    t.string "last_name"
+    t.string "first_name"
+    t.string "last_name_kana"
+    t.string "first_name_kana"
+    t.string "post_code"
+    t.string "address"
+    t.string "telephone_number"
+    t.boolean "is_active"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.index ["email"], name: "index_customers_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_customers_on_reset_password_token", unique: true
+
   end
 
   create_table "genres", force: :cascade do |t|
@@ -102,7 +111,7 @@ ActiveRecord::Schema.define(version: 2024_09_17_092755) do
     t.integer "order_id"
     t.integer "item_id"
     t.integer "price"
-    t.integer "amount"
+    t.integer "amountexit"
     t.integer "making_status", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

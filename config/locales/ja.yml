@@ -17,11 +17,6 @@ ja:
         making: "製作中"
         production_completed: "製作完了"
 
-  item:
-    is_active:
-      active: "販売中"
-      inactive: "販売停止中"
-
   activerecord:
     errors:
       messages:

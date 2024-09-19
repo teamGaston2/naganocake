@@ -18,10 +18,11 @@ class Item < ApplicationRecord
   validates :image, presence: { message: "をアップロードしてください" }
 
 
-  
+  #enum is_active: { inactive: 0, active: 1 }
+
   belongs_to :genre
   has_many :order_details , dependent: :destroy
+  has_many :cart_items , dependent: :destroy
 
-  #belongs_to :cart_item
 
 end
