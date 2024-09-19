@@ -10,13 +10,9 @@ class Item < ApplicationRecord
     (price * 1.1).floor
   end
 
-
-
-  
   belongs_to :genre
   has_many :order_details , dependent: :destroy
 
-
-
+  belongs_to :cart_item
 
 end

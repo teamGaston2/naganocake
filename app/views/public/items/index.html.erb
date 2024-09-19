@@ -3,6 +3,8 @@
 <div class="items_index">
   <% @items.each do |f| %>
     <%= link_to(image_tag(f.get_image), item_path) %>
+    <!--book.user.get_profile_image-->
+    <%= image_tag f.get_profile_image(50, 50) %>
     <%= f.text_name %>
     <%= f.price %>
   <% end %>
