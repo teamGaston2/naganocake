@@ -1,7 +1,5 @@
 <h3>商品一覧</h3>
-
 <%= link_to "商品追加リンク" , new_admin_item_path %>
-
 <table class="table">
   <thead>
     <tr>
@@ -21,10 +19,8 @@
         <td><%= item.genre.name %></td>
         <td class="<%= item.is_active == "active" ? 'text-success' : 'text-secondary' %>">
           <%= item.is_active_i18n %>
-        </td>
 
-
-          <% if item.is_active == "販売中" %>=>
+          <% if item.is_active == "active" %>
             販売中
           <% else %>
             販売停止中
