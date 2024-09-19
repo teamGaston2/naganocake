@@ -2,7 +2,7 @@
   <h2>ジャンル検索</h2>
   <ul class="list-group">
     <% genres.each do |genre| %>
-      <li class="list-group-item"><%= genre.name %></li>
+      <li class="list-group-item list-group-item-dark"><%= link_to genre.name, my_page_path(genre_id: genre.id), class: 'green-link' %></li>
     <% end %>
   </ul>
 </div>
