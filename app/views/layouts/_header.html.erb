@@ -1,11 +1,11 @@
 <header>
   <%= link_to root_path , class:"nav-link" do %>
-    <%= image_tag 'logo.png' , alt: "Logo"%>
+    <%= image_tag 'logo.png' , size: "190x80" , alt: "Logo" , class:"nagano"%>
   <% end %>
 
   <nav>
     <% if customer_signed_in? %>
-    <div class="d-flex justify-content-end align-items-center mt-n4">
+    <div class="d-flex justify-content-end align-items-center ">
       <ul class="navbar-nav" style="flex-direction: row;">
         <li>
           <%=  link_to my_page_path(current_customer.id) , class:"nav-link text-light" do %>
@@ -37,7 +37,7 @@
 
 
     <% elsif admin_signed_in? %>
-    <div class="d-flex justify-content-end align-items-center mt-n4 ">
+    <div class="d-flex justify-content-end align-items-center">
       <ul class="navbar-nav" style="flex-direction: row;">
         <li>
           <%= link_to  admin_items_path , class:"nav-link text-light" do %>
@@ -75,7 +75,7 @@
 
 
     <% else %>
-    <div class="d-flex justify-content-end align-items-center mt-n4">
+    <div class="d-flex justify-content-end align-items-center ">
       <ul class="navbar-nav" style="flex-direction: row;">
         <li>
           <%= link_to about_path  , class:"nav-link text-light" do %>

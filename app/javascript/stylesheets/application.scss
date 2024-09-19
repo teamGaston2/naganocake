@@ -2,6 +2,13 @@
 
 header {
   height: 150px;
+  position: relative;
+}
+
+.nagano{
+  position: absolute;
+  top: 20px;
+  left: 40px;
 }
 
 .btn-outline-secondary {
