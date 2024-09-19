@@ -1,7 +1,7 @@
 <div class="container mt-4">
   <div class="row">
-    <div class="col-md-3">
-      <div class="p-3 mb-2 bg-dark text-white"><h4>注文情報確認画面</h4></div>
+    <div class="col-md-auto p-1 offset-md-1">
+      <div class="bg-dark text-white"><h4>注文情報確認画面</h4></div>
     </div>
   </div>
   <div class="row">
@@ -22,6 +22,7 @@
               <td><%= f.subtotal %></td>
               <td><%= f.amount %></td>
               <td><%= f.subtotal %></td>
+              <!--hidden_fieldを使うらしい　いつかの自分がんばれ-->
             <% end %>
           </tr>
         </tbody>

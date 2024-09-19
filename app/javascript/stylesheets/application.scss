@@ -1,1 +1,24 @@
 @use '~bootstrap/scss/bootstrap';
+
+.btn-outline-secondary {
+  width: 130px; /* 全てのボタンに固定幅を設定 */
+  text-align: center; /* ボタン内の文字を中央揃えに */
+}
+
+.search {
+  float: right; /* 検索窓を画面の右側に配置 */
+  position: relative;
+  margin-right: 50px; /* 右端から20px左にずらす */
+}
+
+.search i {
+  color: lightblue;
+  position: absolute;
+  right: 10px; /* スペル修正 */
+  top: 50%; /* 上下中央に配置 */
+  transform: translateY(-50%); /* 上下中央に配置を調整 */
+}
+
+.search input {
+  padding-right: 30px; /* アイコン分のスペースを確保 */
+}
