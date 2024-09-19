@@ -41,7 +41,6 @@ ActiveRecord::Schema.define(version: 2024_09_19_081202) do
   end
 
   create_table "addresses", force: :cascade do |t|
-    t.integer "address_id"
     t.integer "customer_id"
     t.string "post_number"
     t.string "adress"
@@ -63,7 +62,6 @@ ActiveRecord::Schema.define(version: 2024_09_19_081202) do
   end
 
   create_table "cart_items", force: :cascade do |t|
-    t.integer "care_item_id"
     t.integer "customer_id"
     t.integer "item_id"
     t.integer "amount"
@@ -72,6 +70,7 @@ ActiveRecord::Schema.define(version: 2024_09_19_081202) do
   end
 
   create_table "customers", force: :cascade do |t|
+
     t.string "last_name"
     t.string "first_name"
     t.string "last_name_kana"
@@ -89,10 +88,10 @@ ActiveRecord::Schema.define(version: 2024_09_19_081202) do
     t.datetime "remember_created_at"
     t.index ["email"], name: "index_customers_on_email", unique: true
     t.index ["reset_password_token"], name: "index_customers_on_reset_password_token", unique: true
+
   end
 
   create_table "genres", force: :cascade do |t|
-    t.integer "genre_id"
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -109,7 +108,6 @@ ActiveRecord::Schema.define(version: 2024_09_19_081202) do
   end
 
   create_table "order_details", force: :cascade do |t|
-    t.integer "order_detail_id"
     t.integer "order_id"
     t.integer "item_id"
     t.integer "price"
@@ -120,7 +118,6 @@ ActiveRecord::Schema.define(version: 2024_09_19_081202) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "order_id"
     t.integer "customer_id"
     t.string "postal_code"
     t.string "address"
