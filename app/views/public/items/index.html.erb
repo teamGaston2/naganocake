@@ -1,9 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <%= render '/public/shared/sidebar', genres: @genres %>
+    </div>
+  </div>
+</div>
 <h1>商品一覧</h1>
 <span>全<%= @items.count %>件</span>
 <div class="items_index">
   <% @items.each do |f| %>
-    <%= link_to(image_tag(f.get_image), item_path) %>
-    <%= f.text_name %>
+    <%= link_to(image_tag(f.get_image(300, 200)), item_path(f)) %>
+    <%= f.name %>
     <%= f.price %>
   <% end %>
 </div>
