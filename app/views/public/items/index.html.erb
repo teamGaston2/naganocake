@@ -3,33 +3,21 @@
     <div class="col-md-3">
       <%= render 'public/shared/sidebar', title: 'ジャンル検索', genres: @genres %>
     </div>
-    <div class="col-md-8 offset-md-1">
+    <div class="col-md-9">
       <h1>商品一覧</h1>
       <span>全<%= @items.count %>件</span>
-    </div>
-    <div class="col-md-8 offset-md-1">
-
-    </div>
-
-      <div class="items_index">
+      <div class="row">
         <% @items.each do |f| %>
-          <%= link_to(image_tag(f.get_image(300, 200)), item_path(f)) %>
-          <%= f.name %>
-          <%= f.price %>
+          <div class="col-md-4">
+            <div class="card h-100 d-flex flex-column p-3">
+              <%= link_to(image_tag(f.get_image(200, 200)), item_path(f)) %>
+              <div class="card-body flex-grow-1">
+                <div class="card-text"><%= f.name %></div>
+                <div class="card-text"><%= f.price %>円</div>
+              </div>
+            </div>
+          </div>
         <% end %>
-
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-
-
-
-
       </div>
-
     </div>
   </div>
-</div>
