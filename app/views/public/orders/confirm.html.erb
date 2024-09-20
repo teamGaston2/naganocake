@@ -17,11 +17,11 @@
         </thead>
         <tbody>
           <tr>
-            <% @order_details.each do |f| %>
-              <td><%= f.item_id %></td>
-              <td><%= f.subtotal %></td>
-              <td><%= f.amount %></td>
-              <td><%= f.subtotal %></td>
+            <% @cart_items.each do |cart_item| %>
+              <td><%= cart_item.item_id.name %></td>
+              <td><%= cart_item.subtotal %></td>
+              <td><%= cart_item.amount %></td>
+              <td><%= cart_item.subtotal %></td>
               <!--hidden_fieldを使うらしい　いつかの自分がんばれ-->
             <% end %>
           </tr>
@@ -38,8 +38,8 @@
           <tr>
             <th>商品合計</th>
             <td>
-              <% @order_details.each do |order_details| %>
-                <%= @total += order_details %>
+              <% @order.each do |order| %>
+                <%= @total += order.item.price %>
               <% end %>
             </td>
           </tr>
