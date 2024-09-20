@@ -14,6 +14,12 @@ class Customer < ApplicationRecord
     first_name + last_name
   end
   
+ 
+  
+  def status
+    is_active ? '有効' : '退会'
+  end
+  
   #validates :password, presence: true, length: { minimum: 6 }
 
   def full_name
