@@ -1,5 +1,16 @@
 @use '~bootstrap/scss/bootstrap';
 
+header {
+  height: 150px;
+  position: relative;
+}
+
+.nagano{
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
 .btn-outline-secondary {
   width: 130px; /* 全てのボタンに固定幅を設定 */
   text-align: center; /* ボタン内の文字を中央揃えに */
@@ -9,6 +20,7 @@
   float: right; /* 検索窓を画面の右側に配置 */
   position: relative;
   margin-right: 50px; /* 右端から20px左にずらす */
+  margin-top: 15px;
 }
 
 .search i {
