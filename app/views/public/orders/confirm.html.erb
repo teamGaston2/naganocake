@@ -16,36 +16,41 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <% @cart_items.each do |cart_item| %>
-              <td><%= cart_item.item_id.name %></td>
-              <td><%= cart_item.subtotal %></td>
+          <% total = 0 %>
+          <% @cart_items.each do |cart_item| %>
+            <tr>
+              <td>
+                <%= image_tag cart_item.item.image.attached? ? url_for(cart_item.item.image) : asset_path('no_image.jpg'), size: "60x50" %>
+                <%= cart_item.item.name %>
+              </td>
+              <td><%= (cart_item.item.price*1.1).to_i %></td>
               <td><%= cart_item.amount %></td>
-              <td><%= cart_item.subtotal %></td>
-              <!--hidden_fieldを使うらしい　いつかの自分がんばれ-->
-            <% end %>
-          </tr>
+              <td>
+                <% subtotal = ((cart_item.item.price*cart_item.amount)*1.1).to_i %>
+                <%= subtotal %>
+              </td>
+            </tr>
+            <% total += (cart_item.item.price*cart_item.amount)*1.1 %>
+          <% end %>
         </tbody>
       </table>
     </div>
-    <div class="col-md-2 mt-2">
+    <div class="col-md-3 mt-2">
       <table class="table">
         <thead>
           <tr>
             <th>送料</th>
-            <td><%= @shipping %></td>
+            <td><%= @shipping = 800 %></td>
           </tr>
           <tr>
             <th>商品合計</th>
             <td>
-              <% @order.each do |order| %>
-                <%= @total += order.item.price %>
-              <% end %>
+              <%= total.to_i %>
             </td>
           </tr>
           <tr>
             <th>請求金額</th>
-            <td><%= @total + @shipping %></td>
+            <td><%= total.to_i + @shipping %></td>
           </tr>
         </thead>
       </table>
@@ -60,7 +65,17 @@
     <!--<div class="col-md-5"><%= @addressee %></div>-->
   </div>
   <div class="text-center">
-    <!--%= f.submit "注文を確定する", class: "btn btn-success" %>-->
-    <button type="button" class="btn btn-success"><%= link_to '注文を確定する', thanks_orders_path %></button>
+    <%= form_with model: @order, url: orders_path, method: :post, local: true do |f| %>
+      <%= f.hidden_field :customer_id %>
+      <%= f.hidden_field :postal_code %>
+      <%= f.hidden_field :address %>
+      <%= f.hidden_field :name %>
+      <%= f.hidden_field :shipping_cost %>
+      <%= f.hidden_field :total_payment %>
+      <%= f.hidden_field :payment_method %>
+      <%= f.hidden_field :order_status %>
+      <%= f.submit "注文を確定する", class: "btn btn-success" %>
+    <% end %>
   </div>
 </div>
+

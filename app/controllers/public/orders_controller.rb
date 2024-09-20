@@ -29,14 +29,10 @@ class Public::OrdersController < ApplicationController
   end
 
   def confirm
-    @order = current_customer.cart_items
-    @ad = Address.new(order_details_params)
+    @order = Order.new
+    # @order = current_customer.cart_items
+    @ad = Address.new(ad_params)
     @cart_items = current_customer.cart_items.all
-    # @order = Order.find(params[:id])
-    # @order_price = Order.all.sum(:price) 使えるかも
-    # @order_details = @order.item
-    @shipping = 800
-    @total = 0
     # @payment_methods = params[:order][:payment_method]
     @payment_method_jp = I18n.t("activerecord.attributes.order.payment_method.#{@payment_method}")
     # @addressee = Address.find(params[:id])
@@ -62,6 +58,10 @@ class Public::OrdersController < ApplicationController
 
   private
   def order_details_params
-    params.require(:order).permit(:item_id, :amount)
+    params.require(:order).permit(:customer_id, :postal_code, :address, :name, :shipping_cost, :total_payment, :payment_method, :order_status)
+  end
+
+  def ad_params
+    params.require(:order).permit(:postal_code, :address, :name)
   end
 end
