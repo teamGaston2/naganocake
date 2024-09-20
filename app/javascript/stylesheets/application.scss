@@ -22,3 +22,25 @@
 .search input {
   padding-right: 30px; /* アイコン分のスペースを確保 */
 }
+
+
+
+
+
+.item-index-title{
+  position: relative;
+}
+
+.plus-icon{
+  position: absolute;
+  top: 0px;
+  right: 200px;
+}
+
+.px-2{
+  background-color: #d6d6d6;
+}
+
+ .underline {
+    text-decoration: underline;
+  }
