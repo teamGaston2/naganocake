@@ -41,7 +41,7 @@ header {
 
 .item-index-title{
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .plus-icon{
@@ -54,6 +54,10 @@ header {
   background-color: #d6d6d6;
 }
 
- .underline {
+.underline {
     text-decoration: underline;
   }
+  
+.order-index-title {
+  padding-bottom: 25px;
+}
