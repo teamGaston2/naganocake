@@ -56,3 +56,17 @@ header {
  .underline {
     text-decoration: underline;
   }
+  
+  .image {
+    background-size: contain;
+  }
+  
+  .oya {
+  display:-ms-flexbox;
+  display:-webkit-box;
+  display:flex;
+  justify-content:flex-start;
+}
+.oya div{
+  margin-right:50px;
+}
