@@ -7,12 +7,12 @@
       <%= image_tag url_for(@item.image), class: 'img-fluid', style: 'width: 65%;' %>
     </div>
     <div class="col-md-4">
-      <%= form_with model: @item, url: cart_items_path, method: :post do |i| %>
+      <%= form_with model: CartItem.new, url: cart_items_path, method: :post do |i| %>
         <h1><%= @item.name %></h1>
         <p><%= @item.introduction %></p>
         <p><%= number_with_delimiter((@item.price * 1.1).round) %>円 ( <%= number_with_delimiter(@item.price) %>円 )</p>
         <%= i.hidden_field :item_id, value: @item.id %>
-        <%= i.select :amount, *[1..20] %>
+        <%= i.select :amount, *[1..10] %>
         <%= i.submit 'カートに入れる', class: 'btn btn-success' %>
       <% end %>
     </div>

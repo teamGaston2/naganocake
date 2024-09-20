@@ -22,7 +22,10 @@
             <td><%= f.order_id.item_id %></td>
             <td><%= f.price %></td>
             <td><%= f.making_status %></td>
+
+            <td><%= f.submit '表示する',class: "btn btn-primary" %></td>
             <td><%= link_to order_path, "表示する" %></td>
+            <!--どっちでもいける？-->
           <% end %>
         </tbody>
       </table>

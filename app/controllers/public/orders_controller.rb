@@ -55,6 +55,5 @@ class Public::OrdersController < ApplicationController
       flash[:notice] = "不正な住所選択が行われました"
       redirect_to new_order_path and return
     end
-
   end
 end
