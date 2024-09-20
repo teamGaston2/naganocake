@@ -29,7 +29,8 @@ class Public::OrdersController < ApplicationController
   end
 
   def confirm
-    @order = Order.new(order_params)
+    # @order = Order.new(order_params)
+    # @order = Order.find(params[:id])
     # @order_price = Order.all.sum(:price) 使えるかも
     @order_details = OrderDetail.all
     @shipping = 800

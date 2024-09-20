@@ -8,7 +8,6 @@ class Public::ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @items = Item.all
     @genres = Genre.all
-    # @genres = ['ケーキ', '焼き菓子', 'プリン', 'キャンディ']
   end
 
   private

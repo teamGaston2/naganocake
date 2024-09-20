@@ -14,6 +14,9 @@
         <%= i.hidden_field :item_id, value: @item.id %>
         <%= i.select :amount, *[1..10] %>
         <%= i.submit 'カートに入れる', class: 'btn btn-success' %>
+        <% if flash.now[:alert] %>
+          <div class="alert alert-danger"><%= flash.now[:alert] %></div>
+        <% end %>
       <% end %>
     </div>
   </div>
