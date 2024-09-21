@@ -61,12 +61,18 @@ header {
     background-size: contain;
   }
   
-  .oya {
-  display:-ms-flexbox;
-  display:-webkit-box;
-  display:flex;
-  justify-content:flex-start;
+.oya {
+  display: flex;
 }
-.oya div{
-  margin-right:50px;
+
+.yoko{
+  margin-left: 150px;
+}
+
+.yoko1{
+  margin-left: 165px;
+}
+
+.yoko2{
+  margin-left: 100px;
 }
