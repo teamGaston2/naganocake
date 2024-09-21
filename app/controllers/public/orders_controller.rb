@@ -30,7 +30,7 @@ class Public::OrdersController < ApplicationController
   end
 
   def confirm
-    @order = Order.new
+    @order = Order.new(order_details_params)
     @ad = Address.new(ad_params)
     @cart_items = current_customer.cart_items.all
     # @payment_method_jp = I18n.t("activerecord.attributes.order.payment_method.#{payment_method}")
@@ -57,8 +57,18 @@ class Public::OrdersController < ApplicationController
   end
 
   def create
+    @cart_items = current_customer.cart_items
     @order = Order.new(order_details_params)
     if @order.save
+      @cart_items.each do |cart_item|
+        @order.order_details.build(
+          item_id: cart_item.item.id,
+          price: cart_item.item.price,
+          amount: cart_item.amount,
+          making_status: 0 # デフォルト値
+        )
+      end
+      @order.save
       render :thanks
     else
       flash[:error] = @order.errors.full_messages.join(", ") + "注文が失敗しました。"
@@ -68,7 +78,17 @@ class Public::OrdersController < ApplicationController
 
   private
   def order_details_params
-    params.require(:order).permit(:customer_id, :postal_code, :address, :name, :shipping_cost, :total_payment, :payment_method, :order_status)
+    params.require(:order).permit(
+      :customer_id,
+      :postal_code,
+      :address,
+      :name,
+      :shipping_cost,
+      :total_payment,
+      :payment_method,
+      :order_status,
+      order_details_attributes: [:order_id, :item_id, :price, :amount, :making_status]
+    )
   end
 
   def ad_params
