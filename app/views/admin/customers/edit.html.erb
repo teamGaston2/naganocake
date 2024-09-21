@@ -1,0 +1,90 @@
+<div class="container mt-5">
+<% if @customer.errors.any? %>
+  <div class="alert alert-danger">
+    <h4><%= pluralize(@customer.errors.count, "error") %> prohibited this customer from being saved:</h4>
+    <ul>
+      <% @customer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+  <h1 class="mb-4"><%= @customer.last_name %><%= @customer.first_name %>さんの会員情報編集</h1>
+
+  <%= form_with(model: @customer, url: admin_customer_path(@customer), method: :patch, local: true) do |f| %>
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">会員ID</label>
+      <div class="col-sm-10">
+        <p class="form-control-plaintext"><%= @customer.id %></p>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">氏名</label>
+      <div class="col-sm-5">
+        <%= f.text_field :last_name, class: "form-control" %>
+      </div>
+      <div class="col-sm-5">
+        <%= f.text_field :first_name, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">フリガナ</label>
+      <div class="col-sm-5">
+        <%= f.text_field :last_name_kana, class: "form-control" %>
+      </div>
+      <div class="col-sm-5">
+        <%= f.text_field :first_name_kana, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">郵便番号</label>
+      <div class="col-sm-10">
+        <%= f.text_field :postal_code, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">住所</label>
+      <div class="col-sm-10">
+        <%= f.text_field :address, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">電話番号</label>
+      <div class="col-sm-10">
+        <%= f.text_field :telephone_number, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">メールアドレス</label>
+      <div class="col-sm-10">
+        <%= f.email_field :email, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">会員ステータス</label>
+      <div class="col-sm-10">
+        <div class="form-check form-check-inline">
+          <%= f.radio_button :is_active, true, class: "form-check-input", id: "status-active" %>
+          <label class="form-check-label" for="status-active">有効</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <%= f.radio_button :is_active, false, class: "form-check-input", id: "status-inactive" %>
+          <label class="form-check-label" for="status-inactive">退会</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <div class="col-sm-10 offset-sm-2">
+        <%= f.submit "変更を保存", class: "btn btn-success" %>
+      </div>
+    </div>
+  <% end %>
+</div>
