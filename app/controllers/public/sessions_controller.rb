@@ -7,16 +7,22 @@ class Public::SessionsController < Devise::SessionsController
    def after_sign_in_path_for(resource)
      root_path
    end
-   
-   
-   
+
+
+
    private
     def customer_state
-        customer = Customer.find_by(email: params[:customer][email])
-        return if customer.nil?
-        
-        return unless customer.valid_password?(params[:customer][:password])
-        
+        customer = Customer.find_by(email: params[:customer][:email])
+        if customer.is_active == false
+        flash[:alert] = "退会済みです。新規会員登録を行ってください"
+        redirect_to new_customer_registration_path
+        end
+    end
+
+
+  # def customer_params
+  #   params.require(:customer).permit(:email)
+  # end
 
   # GET /resource/sign_in
   # def new
