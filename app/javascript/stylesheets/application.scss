@@ -41,18 +41,45 @@ header {
 
 .item-index-title{
   position: relative;
+  padding-bottom: 25px;
 }
 
 .plus-icon{
   position: absolute;
   top: 0px;
-  right: 200px;
+  right: 100px;
 }
 
 .px-2{
   background-color: #d6d6d6;
 }
 
- .underline {
+.underline {
     text-decoration: underline;
   }
+  
+
+  .image {
+    background-size: contain;
+  }
+  
+.oya {
+  display: flex;
+}
+
+.yoko{
+  margin-left: 150px;
+}
+
+.yoko1{
+  margin-left: 165px;
+}
+
+.yoko2{
+  margin-left: 100px;
+}
+
+.order-index-title {
+  padding-bottom: 25px;
+}
+

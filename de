@@ -1,0 +1,1827 @@
+[33mcommit f1f43377f2b9de7ebdd0f25e4f4ecb5d93cdbc5c[m[33m ([m[1;36mHEAD -> [m[1;32madmin-customer[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/admin-customer[m[33m, [m[1;32mdevelop[m[33m)[m
+Merge: e76d8f3 0088955
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Fri Sep 20 15:14:36 2024 +0900
+
+    Merge pull request #66 from teamGaston2/header
+    
+    Header
+
+[33mcommit e76d8f39453bc8f90c11e34f80497e3cad8cec7d[m
+Merge: 5cf7a7e 64fd163
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Fri Sep 20 15:14:19 2024 +0900
+
+    Merge pull request #67 from teamGaston2/order-home
+    
+    [fix]
+
+[33mcommit 5cf7a7ef87f3a7e624bffb5e89ad5a14a1100eb7[m
+Merge: 4c328e4 14929b0
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Fri Sep 20 15:11:39 2024 +0900
+
+    Merge pull request #64 from teamGaston2/next
+    
+    Next
+
+[33mcommit 4c328e4d3ebf929e02a8acabbb6b6b09c503ad94[m
+Merge: 55d7aa1 f7598dd
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Fri Sep 20 15:11:28 2024 +0900
+
+    Merge pull request #65 from teamGaston2/admin-customer
+    
+    Admin customer
+
+[33mcommit 14929b03d7efd9ee752791a1e37890b67ef4760f[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Fri Sep 20 06:08:36 2024 +0000
+
+    [finish]AddCartItems
+
+[33mcommit 64fd1637edfd4b61f6d01f64b165393f0277cc0a[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Fri Sep 20 06:08:33 2024 +0000
+
+    [fix]
+
+[33mcommit 0088955668f567c2ebf9a4dcf0daf90a7b5498e2[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 23:04:43 2024 +0000
+
+    [fix]ヘッダー画像リンク作成
+
+[33mcommit 16da38a87ade2b1a3700c1aa1bad6797895edd6a[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 17:44:48 2024 +0000
+
+    sidebar design
+
+[33mcommit 7ccf7f3217f9b411154a13ac73cf8f6c90db7d94[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 17:17:31 2024 +0000
+
+    sidebar
+
+[33mcommit 3fbe76f599b017458b1f850de358e8d445327ea9[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 16:53:30 2024 +0000
+
+    last
+
+[33mcommit 4f71e09c2e632324b4287855142f38a5131a3023[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 16:03:57 2024 +0000
+
+    一部調整
+
+[33mcommit f7598ddaa93118162a78a12fa982eebc5c2214f2[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 15:57:09 2024 +0000
+
+    fin customer show
+
+[33mcommit f1a9f1bcf6082a9464746d2346db1dc35cecb6aa[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 14:34:08 2024 +0000
+
+    fin customer index
+
+[33mcommit 38363b3295e5e7bc446d9727f9b37cd0f912c3e0[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 14:33:29 2024 +0000
+
+    item_show
+
+[33mcommit e539b1d19d18faa4a93ccd8d291c79cd2a879dfd[m
+Merge: 08ce8fa 55d7aa1
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 13:15:55 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into next
+
+[33mcommit 08ce8fa97086e7df308ce1447cb165e2bb42feec[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 12:51:09 2024 +0000
+
+    miss commit
+
+[33mcommit a14eb0679acd93a5b6d7c9cad916a0cfaa6ec557[m
+Merge: b803ba1 55d7aa1
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 12:23:42 2024 +0000
+
+    [fix]header変更
+
+[33mcommit 55d7aa11c1b9eb02691ff30a4ab5635e49edde38[m
+Merge: 93cab80 833df21
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 21:06:50 2024 +0900
+
+    Merge pull request #63 from teamGaston2/item
+    
+    [fix]マイグレーションファイルの修正
+
+[33mcommit 833df210bcee0bb68280a614e016634e16bf3ba8[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 12:04:59 2024 +0000
+
+    [fix]マイグレーションファイルの修正
+
+[33mcommit 93cab8018879bdd9d78808d3b3a65a47f9ae1bad[m
+Merge: 03d33e9 3d8c9b1
+Author: IIDA <echan2434@gmail.com>
+Date:   Thu Sep 19 20:20:14 2024 +0900
+
+    Merge pull request #62 from teamGaston2/next
+    
+    Next
+
+[33mcommit 3d8c9b1a8ed3437747dfa4f0796d777134011ac7[m
+Merge: 1ba49bc 03d33e9
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 20:19:53 2024 +0900
+
+    Merge branch 'develop' into next
+
+[33mcommit 1ba49bcb3c72f237ee16606000c9de051923cfba[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 11:14:03 2024 +0000
+
+    index_and_show
+
+[33mcommit 03d33e9ec028e416e13ed8cc5661b3410f86de2f[m
+Merge: 68e2099 3643b28
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 19:35:25 2024 +0900
+
+    Merge pull request #61 from teamGaston2/item
+    
+    Item
+
+[33mcommit 3643b28f7f78b2b38ba7f74d47e1609fd7238214[m
+Merge: f91512c 68e2099
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 19:30:17 2024 +0900
+
+    Merge branch 'develop' into item
+
+[33mcommit f91512c3be25f6a15584efdc85e84fea4db491d3[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 10:20:02 2024 +0000
+
+    [商品編集]
+
+[33mcommit 68e2099dc46178a310b27d2ba8456d5b670e5f6f[m
+Merge: 23af47b 689b33a
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 19:16:38 2024 +0900
+
+    Merge pull request #59 from teamGaston2/genre-item
+    
+    fix new item
+
+[33mcommit 689b33a6dc25cbbc16e6d6950b92798087a4c10a[m[33m ([m[1;31morigin/genre-item[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 10:13:17 2024 +0000
+
+    fix new item
+
+[33mcommit 686103eb0b8d5b871c6ad33fb9c0b5573969d5ce[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 09:35:58 2024 +0000
+
+    [finish]index2
+
+[33mcommit 23af47bfdde4cb804f2db3977ea99990bfb01bff[m
+Merge: 72bfd17 9751906
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 18:35:19 2024 +0900
+
+    Merge pull request #58 from teamGaston2/aso
+    
+    fix migrate
+
+[33mcommit 9751906acceece24f04874fa1344b5f164537a12[m
+Merge: c615c5b 72bfd17
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 18:27:25 2024 +0900
+
+    Merge branch 'develop' into aso
+
+[33mcommit eb9842630b944931ca47f12260095b01ac554e8c[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 09:25:38 2024 +0000
+
+    [finish]index
+
+[33mcommit c615c5b9236f494304f3d2b4d82ad1b99045fefa[m[33m ([m[1;31morigin/aso[m[33m, [m[1;32maso[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 09:24:02 2024 +0000
+
+    fix migrate
+
+[33mcommit 72bfd178bb032c7f5543a2b28380850a1dcf5de5[m
+Merge: 52e9390 8fa6b6b
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 18:06:31 2024 +0900
+
+    Merge pull request #57 from teamGaston2/cart
+    
+    cart77
+
+[33mcommit 8fa6b6bd9317343edb8f0b404b1782799f50263c[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Thu Sep 19 09:00:08 2024 +0000
+
+    cart77
+
+[33mcommit 244ac2213a8fac7eadaa1af8d5768050b6dad760[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 08:43:13 2024 +0000
+
+    index_1
+
+[33mcommit f60ba8430801b7d7a8269df2f1347330fd30c7aa[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 08:15:21 2024 +0000
+
+    サーバー再起動
+
+[33mcommit 250c18cc36144fc4a4328486c7487c0037a40edb[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 07:24:00 2024 +0000
+
+    status OK
+
+[33mcommit 52e939013bef0206bea544119c9a8b089e8b5e0d[m
+Merge: 63ee20d e62f616
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 16:09:16 2024 +0900
+
+    Merge pull request #56 from teamGaston2/cart
+    
+    Cart
+
+[33mcommit e62f616b5b17bdeb46b0e3557305d59ddf6a4357[m
+Merge: 2f98cde 63ee20d
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 16:09:08 2024 +0900
+
+    Merge branch 'develop' into cart
+
+[33mcommit 63ee20d2216eca9ec27d1721237b977d865a06e4[m
+Merge: 1096eb1 29ae9b4
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 16:00:38 2024 +0900
+
+    Merge pull request #55 from teamGaston2/layout
+    
+    Layout
+
+[33mcommit 1096eb1ab08af8e2756c76e059e4163f291ba6f2[m
+Merge: bc07931 a6c5474
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 15:59:41 2024 +0900
+
+    Merge pull request #54 from teamGaston2/item
+    
+    [質問]
+
+[33mcommit 29ae9b442707e3d40f2c8f9952fbc9ac826266e0[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 06:57:56 2024 +0000
+
+    ^^;
+
+[33mcommit 2f98cde484f02683767dd929b3d4b05178e39513[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Thu Sep 19 06:50:47 2024 +0000
+
+    cart7
+
+[33mcommit a6c5474228fede0ff2e67d6d5a07f125751e3ab8[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 06:49:20 2024 +0000
+
+    [質問]
+
+[33mcommit b803ba10e862b6a98119636914be0ea60e529c33[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 06:12:34 2024 +0000
+
+    [header途中]
+
+[33mcommit 21096adab5ef90dfe552d671ca40ede4ac95a742[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 04:32:15 2024 +0000
+
+    ^^
+
+[33mcommit c13ff9e8b06c8c8ced4642b8f89104b66e9cd07e[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 03:29:29 2024 +0000
+
+    admin
+
+[33mcommit eaf2f1111c74abb9f1443dd7675765b816f1f6ee[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 02:46:53 2024 +0000
+
+    unkown
+
+[33mcommit 6f3d2bac42a69fc721a512b9a99b0c14255f8985[m
+Merge: 9a39e90 bc07931
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 02:10:37 2024 +0000
+
+    conflict
+
+[33mcommit bc0793110d51344c1bc0be9ffc5391b0a60ec2a7[m
+Merge: dcb0710 427a091
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 11:08:17 2024 +0900
+
+    Merge pull request #53 from teamGaston2/aso
+    
+    aso [fin]
+
+[33mcommit 9a39e906977eeaddfb330ab1c288b8b881b96b14[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 02:05:08 2024 +0000
+
+    status
+
+[33mcommit 427a091214660f625238a6e1bf586f3d417e8a33[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 02:02:43 2024 +0000
+
+    aso [fin]
+
+[33mcommit dcb07109f5e530c0bca6a72e2a752d247a14b17d[m
+Merge: 59df213 580b04d
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 10:54:45 2024 +0900
+
+    Merge pull request #52 from teamGaston2/header
+    
+    Header
+
+[33mcommit 580b04d8143496a4d77ece7556c1378d5c17ca4c[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 01:47:08 2024 +0000
+
+    [header途中]
+
+[33mcommit 6ddb981e9e4eb87f9ef08a3927b4630c69c9eeb0[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Thu Sep 19 00:14:52 2024 +0000
+
+    cart66
+
+[33mcommit 59df213c6a4a884645acf3c6a4d39472d07912ed[m[33m ([m[1;32mmigra1[m[33m)[m
+Merge: 16e2a8d d9ee3f0
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Thu Sep 19 08:28:25 2024 +0900
+
+    Merge pull request #51 from teamGaston2/layout
+    
+    Layout
+
+[33mcommit af552c85ac9744de9b10ec05f515260167df1e36[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 19:03:45 2024 +0000
+
+    admin_status
+
+[33mcommit aba4073e0c175684332eb807268d4f41b31e86c3[m
+Merge: d9ee3f0 16e2a8d
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 18:52:52 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into layout
+
+[33mcommit d9ee3f06582eca40a30ac69856cb1b6bfaad1fc2[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 18:46:16 2024 +0000
+
+    errow4
+
+[33mcommit b892ecca73f98225d45df3baacf113aec7a2f943[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 18:38:25 2024 +0000
+
+    errow3
+
+[33mcommit 13ee6b2b0b5781200203e7a0a028cf4f498ee00e[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 18:23:34 2024 +0000
+
+    errow2
+
+[33mcommit 059a9cd12433ce430ae1d961d33a0b0e52eb8a42[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 18:18:04 2024 +0000
+
+    errow
+
+[33mcommit 3a2df545dc4803a7096f33b1c5bbea06de300290[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 17:50:11 2024 +0000
+
+    show完成
+
+[33mcommit d5f8e6e8a40deb45d223d0da959624d71733eb9a[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 17:21:36 2024 +0000
+
+    show途中
+
+[33mcommit 16e2a8dd5129b9a3b19b590f3445d9dc7f177780[m
+Merge: c24772d c9ad469
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 02:00:22 2024 +0900
+
+    Merge pull request #50 from teamGaston2/migra1
+    
+    新規投稿完
+
+[33mcommit c9ad4695f847120fd481097369537264a608eb9f[m[33m ([m[1;31morigin/migra1[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 16:59:06 2024 +0000
+
+    新規投稿完
+
+[33mcommit c24772d63af1154e0e9d44074c1a6d09419086cc[m
+Merge: 50d5b78 a7c7585
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 00:35:53 2024 +0900
+
+    Merge pull request #49 from teamGaston2/layout
+    
+    Layout
+
+[33mcommit a7c75854c0a0f656d49a13d7df13f4a4b4f9536f[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 15:33:25 2024 +0000
+
+    oeder_index
+
+[33mcommit 50d5b785748d4c57589789d998b07b865ca8d07d[m
+Merge: 09a322f ef9b85b
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Thu Sep 19 00:29:53 2024 +0900
+
+    Merge pull request #48 from teamGaston2/about
+    
+    admin create miss
+
+[33mcommit ef9b85bf0c290ded93b995b9e574ef6f2235f95b[m
+Merge: 0ec0e68 09a322f
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Thu Sep 19 00:29:19 2024 +0900
+
+    Merge branch 'develop' into about
+
+[33mcommit 0ec0e687c5a149c72bbf0bcdd6e8dda91c71dcd0[m[33m ([m[1;31morigin/about[m[33m, [m[1;32mabout[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 15:27:07 2024 +0000
+
+    admin create miss
+
+[33mcommit 09a322ff5f4ed6b4983d6aeb74f7d84db5a4ddba[m
+Merge: 2d11f5f 72f08fc
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 23:39:48 2024 +0900
+
+    Merge pull request #47 from teamGaston2/about
+    
+    fin,about
+
+[33mcommit 72f08fc096bf1d2bfece6bec369d77b2f11c81cd[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 14:38:28 2024 +0000
+
+    fin,about
+
+[33mcommit 6623f47ee80649f348c0f9a9d0889c770b9fdd8a[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 14:25:41 2024 +0000
+
+    mushi
+
+[33mcommit 829271c4945ddb34104e34e6bf7b044429ca71d7[m
+Merge: 5edf32d 2d11f5f
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 14:25:40 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into header
+
+[33mcommit 2d11f5f767ad367e178704889b228c291aba79f6[m
+Merge: 91e6c71 8d38ba5
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 23:23:52 2024 +0900
+
+    Merge pull request #46 from teamGaston2/item
+    
+    Item
+
+[33mcommit 8d38ba530d3b96556acdf78801479b3cf4aaba88[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 14:21:44 2024 +0000
+
+    [商品一覧詳細編集機能完成]
+
+[33mcommit 91e6c7158bab4e7e95b6cd82dbe3c094a944f8e7[m
+Merge: 956ca23 e061938
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 23:02:24 2024 +0900
+
+    Merge pull request #45 from teamGaston2/layout
+    
+    Layout
+
+[33mcommit e06193855b37dfbc18c9d8fb0cf09e0e49d646ae[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 13:43:22 2024 +0000
+
+    hidden unfinish
+
+[33mcommit 956ca238e0a63930912d186330cdb17708e76c83[m
+Merge: 7562850 500e9af
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 22:28:46 2024 +0900
+
+    Merge pull request #44 from teamGaston2/genre-edit
+    
+    genre edit
+
+[33mcommit 500e9afe4c628eff64dc78cfe50b3c85dff13a2c[m
+Merge: 1aab430 7562850
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 22:26:05 2024 +0900
+
+    Merge branch 'develop' into genre-edit
+
+[33mcommit 1aab4304dadecbac2951da8cb44727bd36171518[m[33m ([m[1;31morigin/genre-edit[m[33m, [m[1;32mgenre-edit[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 13:22:03 2024 +0000
+
+    genre edit
+
+[33mcommit d84766e013e24b0295a6193a60b67d289b3c9552[m
+Merge: d731137 7562850
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 12:06:50 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into item
+
+[33mcommit 5edf32d5ffe1a5a50f92cdbad74fafc496de10fe[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 12:05:46 2024 +0000
+
+    [?]
+
+[33mcommit e811bc188a972a5263263d3b0d8dceb99be74b76[m
+Merge: 3931586 7562850
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 12:03:44 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into header
+
+[33mcommit 75628507863561c04251e375ca22f78a919548e0[m
+Merge: 5d03512 87151a3
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 21:00:29 2024 +0900
+
+    Merge pull request #43 from teamGaston2/order-home
+    
+    [注文ステータスと製作ステータスの連携完了]
+
+[33mcommit 87151a3ded3ab3ddd5b859492e5058bf94b87ad8[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 11:57:53 2024 +0000
+
+    [注文ステータスと製作ステータスの連携完了]
+
+[33mcommit 77cc4fa53ac2976dc35b644070879a75f0752038[m
+Merge: 6807e08 5d03512
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Wed Sep 18 11:38:52 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into cart
+
+[33mcommit 6807e08b54db4226c912a68419f97ec683fe86b6[m
+Merge: 91b40ee c93b4e8
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Wed Sep 18 11:36:33 2024 +0000
+
+    cart
+
+[33mcommit 5d03512e1f031b18225f2da90447c33b46fd20d5[m
+Merge: c93b4e8 dac09df
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 20:25:26 2024 +0900
+
+    Merge pull request #42 from teamGaston2/genre
+    
+    admin genre index
+
+[33mcommit dac09dfeb53980dfed92176f4b1473e9868477fe[m[33m ([m[1;31morigin/genre[m[33m, [m[1;32mgenre[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 11:22:26 2024 +0000
+
+    admin genre index
+
+[33mcommit c93b4e85055987b36830d253eb9ff78f24389420[m
+Merge: 378c033 c045afb
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 20:17:23 2024 +0900
+
+    Merge pull request #41 from teamGaston2/address
+    
+    Address
+
+[33mcommit c045afb7ee56a90045eb2339085dbe3d50aaeed8[m
+Merge: 2d2b53b 378c033
+Author: IIDA <echan2434@gmail.com>
+Date:   Wed Sep 18 20:16:00 2024 +0900
+
+    Merge branch 'develop' into address
+
+[33mcommit 2d2b53bf64ca36056232f9e9e549920b80117531[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Wed Sep 18 11:08:17 2024 +0000
+
+    address6
+
+[33mcommit 6d074dc816ecb7c8dfbf224528bcff334a3c6845[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Wed Sep 18 10:17:52 2024 +0000
+
+    address5
+
+[33mcommit 81e52c9be0975b0875a77c03222ed37af50a2c35[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 09:52:27 2024 +0000
+
+    menter
+
+[33mcommit 51a27359079d9a13a37934e6a752da58a72d30ae[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Wed Sep 18 08:23:14 2024 +0000
+
+    address3
+
+[33mcommit 347e5176a88fd30c19339032e223128951d5a16d[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 07:26:14 2024 +0000
+
+    1
+
+[33mcommit 378c0331a7bd56ded6660535e842c7872e87916c[m
+Merge: 69e191f 1114bce
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 15:43:32 2024 +0900
+
+    Merge pull request #40 from teamGaston2/public_orders_confirm
+    
+    Public orders confirm
+
+[33mcommit 69e191f02104aea2f0d035c8c2eefd2c71e4d58d[m
+Merge: ba0089f cd2cae6
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 15:36:43 2024 +0900
+
+    Merge pull request #39 from teamGaston2/order
+    
+    [注文履歴詳細]
+
+[33mcommit cd2cae6f83412bbe8a67b06f9720dbac9c8582a7[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 06:18:49 2024 +0000
+
+    [注文履歴詳細]
+
+[33mcommit 1114bce0a8d8d5a2d86059c53bac67aedfa0895a[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 05:50:14 2024 +0000
+
+    thanks_page
+
+[33mcommit 0cf764844b5d65dc3d3f254c9c18ea22ff58cdf6[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 04:59:14 2024 +0000
+
+    button
+
+[33mcommit 3931586c54f915e9df02e7c6b12f7bce2a8c3b90[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 04:42:47 2024 +0000
+
+    [header途中]
+
+[33mcommit dd54a292b716b02a3a74f21282d558f75a3ac4ab[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 04:37:53 2024 +0000
+
+    sum
+
+[33mcommit d73113783dddabb31cfc33096f89deab7a4f2f12[m
+Merge: 9028f86 ba0089f
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 03:30:02 2024 +0000
+
+    [?]
+
+[33mcommit ba0089f25a876fbb751f711efd7c9ca0a6864363[m
+Merge: b926b7b c781f21
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 12:22:04 2024 +0900
+
+    Merge pull request #38 from teamGaston2/order
+    
+    Order
+
+[33mcommit c781f213dbf9bc3c242e2b826f885c05e4ec8617[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Wed Sep 18 03:20:15 2024 +0000
+
+    [注文履歴詳細画面作成中]
+
+[33mcommit 91b40eeb17e3c3430c03ca20bf0eedcafffc1a3c[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Wed Sep 18 02:55:46 2024 +0000
+
+    cart1
+
+[33mcommit bf937fa9e139e8b43eb2ce3f00db364b8ecaae46[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Wed Sep 18 02:06:17 2024 +0000
+
+    cart3
+
+[33mcommit ce256aeaab3c4d6d94b3a1414726f2a5d44a9824[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 01:40:34 2024 +0000
+
+    confirm
+
+[33mcommit 293ec078cd581adcbc5827cd97c7e96d8ebf0136[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 00:39:27 2024 +0000
+
+    con
+
+[33mcommit b926b7bcad6e0bb45a509eb77b422eec8cae3fb9[m
+Merge: f4ceb87 ef53704
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 00:06:34 2024 +0900
+
+    Merge pull request #37 from teamGaston2/pub_orders_check
+    
+    Pub orders check
+
+[33mcommit f4ceb877308a3bd2f6465bc85a18f95d54b0abb6[m
+Merge: db90958 aaf01c1
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Wed Sep 18 00:06:23 2024 +0900
+
+    Merge pull request #36 from teamGaston2/admin-item-new
+    
+    admin new item
+
+[33mcommit aaf01c1afacd367af3261fbc342d4078a8861955[m
+Merge: b469c79 db90958
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Wed Sep 18 00:05:36 2024 +0900
+
+    Merge branch 'develop' into admin-item-new
+
+[33mcommit b469c79d51c9442968f09412d08f38f83bc265ff[m[33m ([m[1;31morigin/admin-item-new[m[33m, [m[1;32madmin-item-new[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Tue Sep 17 15:03:31 2024 +0000
+
+    admin new item
+
+[33mcommit ef537041a8d3a6fc83ac5b1d31b6a611421c86fd[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 14:52:04 2024 +0000
+
+    条件分岐
+
+[33mcommit 6bc83533bfdc79ebbbeabcec1cc94888d63d052e[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 14:28:06 2024 +0000
+
+    check画面
+
+[33mcommit 903ee041cdcab9ce07050ed30c336e1220d4da36[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 14:13:01 2024 +0000
+
+    address1
+
+[33mcommit 89b20faa89c58d1ee39ebed7bd03cbdd8dce9284[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 14:04:53 2024 +0000
+
+    [注文履歴詳細作成中]
+
+[33mcommit 73b89d1bf7207ca877dbe3eecb81dd150c5aafca[m
+Merge: dbaead1 db90958
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 13:26:30 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into order
+
+[33mcommit db90958a62e824a898f150f0a9d47108a9ec2158[m
+Merge: 4bb5a1b 8fd045d
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 22:20:40 2024 +0900
+
+    Merge pull request #35 from teamGaston2/order-home
+    
+    [アソシエーション、ステータス]
+
+[33mcommit 8fd045d70f3460f4b56a9ad1bc9a50c5367e651f[m
+Merge: bdfa479 4bb5a1b
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 22:20:15 2024 +0900
+
+    Merge branch 'develop' into order-home
+
+[33mcommit bdfa4797ee00edfce8a1265eb79de761b2807cfd[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 13:14:00 2024 +0000
+
+    [アソシエーション、ステータス]
+
+[33mcommit f111fbbf2c610c67bc16c1b98df95d0aef8fe067[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 12:23:00 2024 +0000
+
+    New address
+
+[33mcommit 4bb5a1b527e020e89206902acad03e7c36a38054[m
+Merge: 44e0148 2a591a9
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 18:47:36 2024 +0900
+
+    Merge pull request #34 from teamGaston2/customers
+    
+    Customers
+
+[33mcommit 2a591a9f6b4ba16f597c60995ae16baa169540dd[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 09:42:36 2024 +0000
+
+    customer6
+
+[33mcommit 11aea9d2ed1856595afdee20df2e6587863976e0[m
+Merge: 515121a 44e0148
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 09:14:21 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into pub_orders_check
+
+[33mcommit 50d37c1aff13865e08e155e3bc477d309931d31e[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 08:35:11 2024 +0000
+
+    customer4
+
+[33mcommit 515121a2e0362b89d28b14bfc033abcf7b2d522d[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 08:14:15 2024 +0000
+
+    view
+
+[33mcommit 44e014813df4042ab7e188f738fb2e32961c489e[m
+Merge: 7fbe62f 91b2e26
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 16:52:39 2024 +0900
+
+    Merge pull request #33 from teamGaston2/top
+    
+    [add]item url
+
+[33mcommit 91b2e263b0007497dbab09eaaaae4c1f5f81234d[m[33m ([m[1;31morigin/top[m[33m, [m[1;32mtop[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Tue Sep 17 07:49:56 2024 +0000
+
+    [add]item url
+
+[33mcommit 04de65220bace4eeff05497f315345f9d9f473e6[m
+Merge: 7878e3b 7fbe62f
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 06:36:05 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into customers
+
+[33mcommit 7878e3bba54c9440e228ca8b3fbb4ab522569fe3[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 06:21:40 2024 +0000
+
+    customer3
+
+[33mcommit 7fbe62f42ba093c567db6939031ca82a63353aa6[m
+Merge: b8a118e e7eca72
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Tue Sep 17 15:08:49 2024 +0900
+
+    Merge pull request #32 from teamGaston2/order-home
+    
+    [ルーティング修正]
+
+[33mcommit e7eca7268f7384269320d92880708112f3e678c0[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 06:07:07 2024 +0000
+
+    [ルーティング修正]
+
+[33mcommit dbaead176fb2fef81e49d597c02fba23bd3379ed[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 04:31:25 2024 +0000
+
+    [action]
+
+[33mcommit b8a118ec0ecd6c550e5a96e51dff9566fcdab1fc[m
+Merge: a774a0b 03dfed3
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 13:02:38 2024 +0900
+
+    Merge pull request #31 from teamGaston2/pub-home2
+    
+    Add img
+
+[33mcommit 03dfed37ffe93fff26cf91b1c70b98db1175276f[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 03:13:04 2024 +0000
+
+    Add img
+
+[33mcommit c454465094747101c53f219dfdb36aabc76123f0[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 02:52:18 2024 +0000
+
+    customers1
+
+[33mcommit a774a0bcf8108ce6b5626f36c96b4136eee7141d[m
+Merge: 1b2baf3 4ee4154
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 11:43:07 2024 +0900
+
+    Merge pull request #30 from teamGaston2/header
+    
+    [パス修正]
+
+[33mcommit 4ee4154c5bb86c064effe8f5e8a453400cdd08e5[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 02:35:23 2024 +0000
+
+    [パス修正]
+
+[33mcommit 1b2baf3b430a79cf2c32e08ffe92980194321742[m
+Merge: a4f798b 9f4b64c
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 11:33:46 2024 +0900
+
+    Merge pull request #29 from teamGaston2/bootstrap
+    
+    Bootstrap
+
+[33mcommit 9f4b64ceb30dc2d016835ff69ae422555fd46cd8[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 02:18:51 2024 +0000
+
+    header
+
+[33mcommit f5ca7b964dacdfc5d8d202e60f3d496e2b67a611[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Tue Sep 17 02:06:16 2024 +0000
+
+    AddBootstrap
+
+[33mcommit a4f798b780116851ca3f54bbafca71adcdffb388[m
+Merge: 775a06d 509bc7e
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Tue Sep 17 09:55:06 2024 +0900
+
+    Merge pull request #28 from teamGaston2/item
+    
+    Item
+
+[33mcommit 509bc7eafaccea85189fee76a5cd3154cc54b47c[m
+Merge: ba38365 775a06d
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 09:54:48 2024 +0900
+
+    Merge branch 'develop' into item
+
+[33mcommit 775a06dd756274f8a93e1d2bfbc79d4b4a9dd943[m
+Merge: 5b87087 5cac3a9
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Tue Sep 17 09:26:00 2024 +0900
+
+    Merge pull request #27 from teamGaston2/header
+    
+    [headre]
+
+[33mcommit 5cac3a92227f57255ebfce1117fc298d76bd4a17[m
+Merge: a04a130 5b87087
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 09:25:34 2024 +0900
+
+    Merge branch 'develop' into header
+
+[33mcommit a04a13060120652945da87e07295205d4d299f7f[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Tue Sep 17 00:15:38 2024 +0000
+
+    [headre]
+
+[33mcommit 5b87087a7b69134915ef08f17851da4a4e0befcd[m
+Merge: 64fef04 5c76528
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Tue Sep 17 09:12:39 2024 +0900
+
+    Merge pull request #26 from teamGaston2/sessions
+    
+    Sessions
+
+[33mcommit 5c765287878ddd13b73c414926b70a3b2122c87c[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 00:09:16 2024 +0000
+
+    sign_up4
+
+[33mcommit 852c962204aa70211a2f4608ec9738916b15c2fd[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 00:05:22 2024 +0000
+
+    sign_in3
+
+[33mcommit 91bfd234258a5a73c3aabff7352578027a0eecc3[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Tue Sep 17 00:00:18 2024 +0000
+
+    sign_up2
+
+[33mcommit 344ad5bfc06fc4f2de3ee95f4b63c6be29524cde[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Mon Sep 16 23:32:55 2024 +0000
+
+    sign_up
+
+[33mcommit 64fef04cb31d214c01865f1e88da399b175642dc[m
+Merge: 123245c 36b1364
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Tue Sep 17 08:03:02 2024 +0900
+
+    Merge pull request #25 from teamGaston2/pub-home2
+    
+    pub_home_途中2
+
+[33mcommit 123245cd42b184fabe216b4937ca84e2b21d3b61[m
+Merge: d8a7f91 5aa98d4
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Tue Sep 17 08:02:46 2024 +0900
+
+    Merge pull request #24 from teamGaston2/public_orders_confirm
+    
+    Public orders confirm
+
+[33mcommit 36b136426b1b1299bc008eb3b4506d0f8f78646a[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 16:39:43 2024 +0000
+
+    sidebar
+
+[33mcommit 5aa98d4253ad1ebba3a03da8ed9c9a27af7d3c8e[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 15:22:45 2024 +0000
+
+    confirm
+
+[33mcommit d8a7f91f470476f6d8a206ddf7b1c1bfadf0ee54[m
+Merge: e549410 b8264a4
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 22:58:02 2024 +0900
+
+    Merge pull request #23 from teamGaston2/pub-home-1
+    
+    pub-home 途中
+
+[33mcommit b8264a4f87969b42d59c0c2a8c3ba8e639fcf478[m[33m ([m[1;31morigin/pub-home-1[m[33m, [m[1;32mpub-home-1[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 13:55:52 2024 +0000
+
+    pub-home 途中
+
+[33mcommit e5494103a87c664b9c10995b3af860e7b512d7d5[m
+Merge: 1af222f d62e7f4
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 21:31:18 2024 +0900
+
+    Merge pull request #22 from teamGaston2/public_new
+    
+    Public new
+
+[33mcommit d62e7f4dc7e3bc775636950f4180d3ddeb9b4f77[m
+Merge: d1c3710 1af222f
+Author: IIDA <echan2434@gmail.com>
+Date:   Mon Sep 16 21:31:05 2024 +0900
+
+    Merge branch 'develop' into public_new
+
+[33mcommit 7c70e1a3c6c797f6b71c6563fd80833433be468d[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 12:05:32 2024 +0000
+
+    first commit
+
+[33mcommit d1c37100f6b26bb1156a7f64b1b0bdb6dd03a69e[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Mon Sep 16 12:05:10 2024 +0000
+
+    public_first
+
+[33mcommit 1af222f1e751f516f6b751a2aba1a0493c9d4ad0[m
+Merge: 412c801 c862fcb
+Author: IIDA <echan2434@gmail.com>
+Date:   Mon Sep 16 21:04:12 2024 +0900
+
+    Merge pull request #21 from teamGaston2/admin-vali
+    
+    [fin]admin login
+
+[33mcommit c862fcb4889330e49fa0c0e414dfbda6abffbbb1[m[33m ([m[1;31morigin/admin-vali[m[33m, [m[1;32madmin-vali[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 12:01:12 2024 +0000
+
+    [fin]admin login
+
+[33mcommit 8a1da99ab02e36e959368888526051715109c54f[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Mon Sep 16 11:09:58 2024 +0000
+
+    registration_new
+
+[33mcommit 412c8014c1e761aa7ede3c3a9ea766bdfabdb8c1[m
+Merge: 33712d2 e50928b
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 18:44:23 2024 +0900
+
+    Merge pull request #20 from teamGaston2/enum_cart
+    
+    Enum cart
+
+[33mcommit e50928b1b27ae8b7fc32fc4dee78b2cf315d3a44[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 09:06:40 2024 +0000
+
+    enum_cart
+
+[33mcommit 33712d25d9c04b14f060c8c70bae9712774e5630[m
+Merge: db5bd07 d439077
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 18:03:50 2024 +0900
+
+    Merge pull request #19 from teamGaston2/admin-login
+    
+    admin-login
+
+[33mcommit d43907731a1993b40e7e96a79aa3fae7a48e6ca6[m[33m ([m[1;31morigin/admin-login[m[33m, [m[1;32madmin-login[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 08:59:12 2024 +0000
+
+    admin-login
+
+[33mcommit 68ad008bddb2a9361f41ff02ab5566b3b5a59d65[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 08:32:35 2024 +0000
+
+    jaファイル記載
+
+[33mcommit 3b023dacf077e239eb47eb6f5db58fbeae042489[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 08:18:30 2024 +0000
+
+    num_install
+
+[33mcommit e11a253091ef315805cf89e642b2cccb87ae4fe4[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 07:28:30 2024 +0000
+
+    second commit
+
+[33mcommit db5bd07cbc11c482449625679b619c61a64c3737[m
+Merge: da037d3 0aaddae
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 15:07:18 2024 +0900
+
+    Merge pull request #18 from teamGaston2/enum
+    
+    Enum
+
+[33mcommit 0aaddae89d48a615c59e533d9fa85ad615a42272[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 04:49:19 2024 +0000
+
+    Add enum
+
+[33mcommit 7466914e118f3f60fdaf7aa7d403ac4ee125daa4[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 04:44:00 2024 +0000
+
+    first commit
+
+[33mcommit da037d378b0eb9c1600cd72c0119fa41a668c302[m
+Merge: a5daca6 4c9e798
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 13:40:55 2024 +0900
+
+    Merge pull request #17 from teamGaston2/public_items_index_2
+    
+    Public items index 2
+
+[33mcommit 9028f864a24ac102f172de33c44ada3dc765d2ca[m
+Merge: 75d2439 186624e
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Mon Sep 16 04:18:44 2024 +0000
+
+    [add]
+
+[33mcommit 4c9e798eb686ed58f7aa06d0052d18c7f2025fce[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 04:16:47 2024 +0000
+
+    Add_link
+
+[33mcommit a5daca643f8176887bffd43997a2c269f0ecb896[m
+Merge: 3007519 364ec62
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 13:16:27 2024 +0900
+
+    Merge pull request #16 from teamGaston2/public_items_show2
+    
+    Public items show2
+
+[33mcommit dd6136146128d1fcbf8f4c076ab41857fdef9779[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 04:12:58 2024 +0000
+
+    first commit
+
+[33mcommit 364ec62e633e3e743435eae2d0f438ec497fff8f[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 04:08:28 2024 +0000
+
+    Add items show
+
+[33mcommit 2860bafcced713eece213007f7bb3671613f6fe9[m
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 04:04:58 2024 +0000
+
+    first commit
+
+[33mcommit 300751979006d10e624e85039225693e40c96a3f[m
+Merge: 42e8585 2e28c77
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 13:00:27 2024 +0900
+
+    Merge pull request #15 from teamGaston2/boostrap
+    
+    add boostrap
+
+[33mcommit 2e28c775ce77c3ff3f7a7dbff470a0a9ed097b48[m[33m ([m[1;31morigin/boostrap[m[33m, [m[1;32mboostrap[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 03:57:22 2024 +0000
+
+    add boostrap
+
+[33mcommit 42e858587f276ed02bedc5ccc497d6437fafbc45[m
+Merge: bd67ec4 186624e
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Mon Sep 16 03:57:12 2024 +0000
+
+    changed vieus/adomin/sessions/new public/items/index
+
+[33mcommit 186624ee0c0cd9503ced774a8069c39f8d6aeea0[m
+Merge: 2ee9e22 5e9363f
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Mon Sep 16 12:16:03 2024 +0900
+
+    Merge pull request #14 from teamGaston2/fix-feature
+    
+    Fix feature work
+
+[33mcommit 75d2439b0c31f0d3966b33a4ade58380e257a43f[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Mon Sep 16 02:44:33 2024 +0000
+
+    [add]admin-item-edit-ビューのレイアウト以外完成
+
+[33mcommit 5e9363fae8bd11986ccc53e27eaf7c3058b65917[m[33m ([m[1;31morigin/fix-feature[m[33m, [m[1;32mfix-feature[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 02:35:36 2024 +0000
+
+    Fix feature work
+
+[33mcommit 2ee9e22b4a50deaf4c1e7c28e68494203b25ab85[m
+Merge: b6d856e 5d6c347
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Mon Sep 16 10:04:01 2024 +0900
+
+    Merge pull request #13 from teamGaston2/public_items_index
+    
+    Public items index
+
+[33mcommit b600da01f9f7403415fb2da6ab25034bca47f76f[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 16:21:19 2024 +0000
+
+    [add]admin-item-edit、controlleとprivate入力
+
+[33mcommit ba383654fbf68c6851876aceeef0e2bb25f59309[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 15:57:17 2024 +0000
+
+    [add]admin-item-show、レイアウト以外完成
+
+[33mcommit 6464c06227ae9d3d7212a13b2649082d6835f78b[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 15:27:21 2024 +0000
+
+    [add]item-index,controller+viewsレイアウト以外実装完了、gemにkaminariをインストールした
+
+[33mcommit bd67ec449d291543248399b980001c2da0cee825[m
+Merge: d892917 23099e1
+Author: IIDA <echan2434@gmail.com>
+Date:   Sun Sep 15 21:46:55 2024 +0900
+
+    Merge pull request #12 from teamGaston2/fix-admin
+    
+    [fix]admin
+
+[33mcommit b6d856edb5936c80feeba7cc53db79333b21fc71[m
+Merge: c0e5a09 5787ffa
+Author: IIDA <echan2434@gmail.com>
+Date:   Sun Sep 15 21:46:55 2024 +0900
+
+    Merge pull request #12 from teamGaston2/fix-admin
+    
+    [fix]admin
+
+[33mcommit 23099e1fddbb9ed744c93be0d65b249d39dc29b6[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 12:44:21 2024 +0000
+
+    [fix]admin
+
+[33mcommit 5787ffadced1e0c6c7ff067cc16fc046b5904e99[m[33m ([m[1;31morigin/fix-admin[m[33m, [m[1;32mfix-admin[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 12:44:21 2024 +0000
+
+    [fix]admin
+
+[33mcommit d8929179087b8cd2c7dd7dfb3b983b1c171f089c[m
+Merge: 8ee26c5 7e420a7
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 20:45:44 2024 +0900
+
+    Merge pull request #11 from teamGaston2/public_new
+    
+    Public new
+
+[33mcommit c0e5a09df8fffe7065b0c6230feeed5e61afafea[m
+Merge: 7bd474c 823e07c
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 20:45:44 2024 +0900
+
+    Merge pull request #11 from teamGaston2/public_new
+    
+    Public new
+
+[33mcommit 823e07c14dacaf4a1ea66b8ad21ee46ea862a671[m
+Merge: fabe3b5 b1d62cd
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Sun Sep 15 11:33:32 2024 +0000
+
+    Merge branch 'develop' into public_new
+
+[33mcommit 7e420a790c3ce597916c5335ac2a193a2f00a496[m
+Merge: 53069d8 6dea945
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Sun Sep 15 11:33:32 2024 +0000
+
+    Merge branch 'develop' into public_new
+
+[33mcommit b1d62cda5b43ce25e0300c2864e727b16624d9f7[m
+Merge: ab60565 7bd474c
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Sun Sep 15 11:28:33 2024 +0000
+
+    Merge branch 'develop' of github.com:teamGaston2/naganocake into develop
+
+[33mcommit 6dea945cc76ef8fd353657d9f994a122ed80da71[m
+Merge: 2cd1bcc 8ee26c5
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Sun Sep 15 11:28:33 2024 +0000
+
+    Merge branch 'develop' of github.com:teamGaston2/naganocake into develop
+
+[33mcommit fabe3b51a2f179edd1516830420c40a72ed64d7a[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Sun Sep 15 10:47:13 2024 +0000
+
+    registration
+
+[33mcommit 53069d81ed26389ddf9953d13be322a4e1c47b11[m
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Sun Sep 15 10:47:13 2024 +0000
+
+    registration
+
+[33mcommit 8ee26c515ffbb602f6718fa850a0ba803a0f6e94[m
+Merge: ad5f56f cc852f3
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 18:22:32 2024 +0900
+
+    Merge pull request #10 from teamGaston2/admin-sessions
+    
+    add boostrap
+
+[33mcommit 7bd474c45e2bb0a0ca850028023df36c32093f3a[m
+Merge: 82202b9 f6c3942
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 18:22:32 2024 +0900
+
+    Merge pull request #10 from teamGaston2/admin-sessions
+    
+    add boostrap
+
+[33mcommit 5d6c347897795478d1cf0a5aad4c15f0f7cb7a65[m
+Author: EC2 Default User <ec2-user@ip-172-31-34-19.ap-northeast-3.compute.internal>
+Date:   Sun Sep 15 09:21:18 2024 +0000
+
+    [public]items_index_count
+
+[33mcommit 3cea486e472619ce3b2da1d9c525b1d9fc3e6b3c[m
+Author: EC2 Default User <ec2-user@ip-172-31-34-19.ap-northeast-3.compute.internal>
+Date:   Sun Sep 15 09:16:46 2024 +0000
+
+    [public]items_index
+
+[33mcommit cd689c9038086dd02e140ce164f363fcbcad982d[m
+Merge: 40a665a 82202b9
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 08:54:15 2024 +0000
+
+    Merge remote-tracking branch 'origin/develop' into item
+
+[33mcommit 40a665a481a494ff390ec42fd77a00247f38c3c3[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 08:53:06 2024 +0000
+
+    [ホスト権限削除]
+
+[33mcommit cc852f3e97a9eb95332b0eeb1ad9d14da8a46a48[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 08:41:41 2024 +0000
+
+    add boostrap
+
+[33mcommit f6c3942d0b83c9ed51ecff198dfeb16873f4f24b[m[33m ([m[1;31morigin/admin-sessions[m[33m, [m[1;32madmin-sessions[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 08:41:41 2024 +0000
+
+    add boostrap
+
+[33mcommit ab60565b7d4f7b7d14862a671f01934bd2951b96[m
+Merge: cdba21a 82202b9
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Sun Sep 15 08:23:08 2024 +0000
+
+    changed_name2
+
+[33mcommit 2cd1bccce2dd068d0be34cd6c15a7030d6165352[m
+Merge: 4285871 ad5f56f
+Author: jasmine2434 <echan2434@gmail.com>
+Date:   Sun Sep 15 08:23:08 2024 +0000
+
+    changed_name2
+
+[33mcommit 4169bb7dfde97247230ad9a4441c2a6d7882af72[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 08:21:06 2024 +0000
+
+    [add]ホスト権限追加
+
+[33mcommit cdba21a402586c149b532abe42b0ef623c03bee1[m
+Author: EC2 Default User <ec2-user@ip-172-31-0-96.ap-northeast-1.compute.internal>
+Date:   Sun Sep 15 08:07:54 2024 +0000
+
+    changed_name
+
+[33mcommit 42858718b468f5626e697cba38782af706b4cb4c[m
+Author: EC2 Default User <ec2-user@ip-172-31-0-96.ap-northeast-1.compute.internal>
+Date:   Sun Sep 15 08:07:54 2024 +0000
+
+    changed_name
+
+[33mcommit ad5f56f10dd7923ebbc352c2cf0da15a339a9cb3[m
+Merge: 150293d fb3fb48
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 16:23:35 2024 +0900
+
+    Merge pull request #8 from teamGaston2/rails-server
+    
+    rails error
+
+[33mcommit 82202b9de93aea2768a3a130071d684a6957cbdf[m
+Merge: b5b0a86 c25d89e
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 16:23:35 2024 +0900
+
+    Merge pull request #8 from teamGaston2/rails-server
+    
+    rails error
+
+[33mcommit fb3fb48ec3ec64999139ab7dd1bddec0ddeeaa51[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 07:22:25 2024 +0000
+
+    rails error
+
+[33mcommit c25d89e621043969d3811b47b22899eba9e54b32[m[33m ([m[1;31morigin/rails-server[m[33m, [m[1;32mrails-server[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 07:22:25 2024 +0000
+
+    rails error
+
+[33mcommit 150293d0172bb758532cba36c03bed97a47d9909[m
+Merge: 8bcc056 c7e8fb4
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 15:52:46 2024 +0900
+
+    Merge pull request #7 from teamGaston2/change-host
+    
+    change host
+
+[33mcommit b5b0a8697cd17418ec320da5a84b7115d0ee5024[m
+Merge: 8f0554c 6020151
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 15:52:46 2024 +0900
+
+    Merge pull request #7 from teamGaston2/change-host
+    
+    change host
+
+[33mcommit c7e8fb4491898294357df0bb43d45e1fc051163c[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 06:49:23 2024 +0000
+
+    change host
+
+[33mcommit 60201516957c8dbdeaa7b239063035f09cae7436[m[33m ([m[1;31morigin/change-host[m[33m, [m[1;32mchange-host[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 06:49:23 2024 +0000
+
+    change host
+
+[33mcommit 8bcc0561a847a49aab0b4b70efb444905432a351[m
+Merge: b616a69 398cece
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 15:26:16 2024 +0900
+
+    Merge pull request #6 from teamGaston2/add-files
+    
+    add files to admins dir
+
+[33mcommit 8f0554c3f36474929ca4caafd5fae198a645927a[m
+Merge: f8af39d 479c42c
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 15:26:16 2024 +0900
+
+    Merge pull request #6 from teamGaston2/add-files
+    
+    add files to admins dir
+
+[33mcommit 398cecebb69789716f6d38b569da48b0368c42e6[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 06:19:17 2024 +0000
+
+    add files to admins dir
+
+[33mcommit 479c42ccecb7b47d54f6da3c2afed43d669692dd[m[33m ([m[1;31morigin/add-files[m[33m, [m[1;32madd-files[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 06:19:17 2024 +0000
+
+    add files to admins dir
+
+[33mcommit b616a69895448ee1bed8f7964c3b1fe772bf6415[m
+Merge: 0faffb1 a6df632
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:17:16 2024 +0900
+
+    Merge pull request #2 from teamGaston2/kitahara
+    
+    add name
+
+[33mcommit f8af39d123eac05488ada1c2f28d566babb523f9[m
+Merge: 50cf4f8 6a78c23
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:17:16 2024 +0900
+
+    Merge pull request #2 from teamGaston2/kitahara
+    
+    add name
+
+[33mcommit a6df632f097ca64c97ee998e24b97f829780f7b1[m
+Merge: 63bda8b 0faffb1
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:17:09 2024 +0900
+
+    Merge branch 'develop' into kitahara
+
+[33mcommit 6a78c23ecf08332d3ba2af88647a0e298ad45a44[m
+Merge: 9ccd3e9 50cf4f8
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:17:09 2024 +0900
+
+    Merge branch 'develop' into kitahara
+
+[33mcommit 0faffb1405189b15bb86f9f4c0f6de273bb51e1d[m
+Merge: c888e19 1bb9042
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:16:31 2024 +0900
+
+    Merge pull request #3 from teamGaston2/errowww
+    
+    AsamiNakamura
+
+[33mcommit 50cf4f861084913c7cb073621a1f4ed56b50cd2a[m
+Merge: 91fc483 330f48b
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:16:31 2024 +0900
+
+    Merge pull request #3 from teamGaston2/errowww
+    
+    AsamiNakamura
+
+[33mcommit c888e19bfc4350a576cd485bcbac83b0c08e4dda[m
+Merge: e22004e 589cd35
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:16:14 2024 +0900
+
+    Merge pull request #4 from teamGaston2/miura
+    
+    [add]
+
+[33mcommit 91fc48321eaaa3d4e45b8a142ee2796918ea8cab[m
+Merge: b8e4abb f2a9dbc
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:16:14 2024 +0900
+
+    Merge pull request #4 from teamGaston2/miura
+    
+    [add]
+
+[33mcommit 589cd35f4a7f69751e4983297d34d0d2ef218c63[m
+Merge: 76e70f0 e22004e
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 14:15:27 2024 +0900
+
+    Merge branch 'develop' into miura
+
+[33mcommit f2a9dbc5787cd9d018787a4d0b6196d1de3fac83[m
+Merge: de39f57 b8e4abb
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 14:15:27 2024 +0900
+
+    Merge branch 'develop' into miura
+
+[33mcommit 63bda8b948904ace0bec6de01cd1733cec7406f3[m
+Merge: a093aef e22004e
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:15:12 2024 +0900
+
+    Merge branch 'develop' into kitahara
+
+[33mcommit 9ccd3e932786a241fa16c37a7f0bc95e832dfaaf[m
+Merge: 63a76ee b8e4abb
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 14:15:12 2024 +0900
+
+    Merge branch 'develop' into kitahara
+
+[33mcommit e22004e3212e363da048cd76d56d02f65916d859[m
+Merge: 3c4d311 bf1e7ac
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 14:11:53 2024 +0900
+
+    Merge pull request #5 from teamGaston2/iida
+    
+    app_application
+
+[33mcommit b8e4abb38ecfaa067fc98da0c652566d5dd7aa2a[m
+Merge: 9ea2d14 ecc2d46
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 14:11:53 2024 +0900
+
+    Merge pull request #5 from teamGaston2/iida
+    
+    app_application
+
+[33mcommit ecc2d461fde331ddff41b9305d26d729354fd442[m
+Author: EC2 Default User <ec2-user@ip-172-31-0-96.ap-northeast-1.compute.internal>
+Date:   Sun Sep 15 04:32:41 2024 +0000
+
+    app_application
+
+[33mcommit bf1e7acb10fdb63f6dfa99617e3b7a53f8dd6810[m
+Author: EC2 Default User <ec2-user@ip-172-31-0-96.ap-northeast-1.compute.internal>
+Date:   Sun Sep 15 04:32:41 2024 +0000
+
+    app_application
+
+[33mcommit 1bb904269d8970e0a1ad72bdde80b7efb83ff235[m
+Author: EC2 Default User <ec2-user@ip-172-31-34-19.ap-northeast-3.compute.internal>
+Date:   Sun Sep 15 04:31:30 2024 +0000
+
+    AsamiNakamura
+
+[33mcommit 330f48baf67ba898bc10ebc71bdb767d48fbb542[m
+Author: EC2 Default User <ec2-user@ip-172-31-34-19.ap-northeast-3.compute.internal>
+Date:   Sun Sep 15 04:31:30 2024 +0000
+
+    AsamiNakamura
+
+[33mcommit 76e70f027bc604e88872b1611abd26d21e366af0[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 04:27:38 2024 +0000
+
+    [add]
+
+[33mcommit de39f573916d662c544eb82ab66cd4795109f115[m
+Author: miuraayumi19920514 <174306160+miuraayumi19920514@users.noreply.github.com>
+Date:   Sun Sep 15 04:27:38 2024 +0000
+
+    [add]
+
+[33mcommit a093aef0432cb4ad7add8e4f126ec2cc7e3c22eb[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 04:26:52 2024 +0000
+
+    add name
+
+[33mcommit 63a76ee693e5691b4e9074b7553020f9b1a23786[m[33m ([m[1;31morigin/kitahara[m[33m, [m[1;32mkitahara[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 04:26:52 2024 +0000
+
+    add name
+
+[33mcommit 9ea2d144c26b2aff645d7727aa65fefada889523[m
+Merge: daf9ae2 15148b0
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 13:12:06 2024 +0900
+
+    Merge pull request #1 from teamGaston2/devise-install
+    
+    Add devise
+
+[33mcommit 3c4d3114e2c4707e8c383137ca5015e065eb5b7d[m
+Merge: daf9ae2 15148b0
+Author: Asm-aai <176456930+Asm-aai@users.noreply.github.com>
+Date:   Sun Sep 15 13:12:06 2024 +0900
+
+    Merge pull request #1 from teamGaston2/devise-install
+    
+    Add devise
+
+[33mcommit 15148b021d7168e544ae9231ea828aa2fecd9c5a[m[33m ([m[1;31morigin/devise-install[m[33m, [m[1;32mdevise-install[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 03:58:45 2024 +0000
+
+    Add devise
+
+[33mcommit daf9ae27bde64ec80e5823e4dd5f7a9964ecda86[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sun Sep 15 02:56:52 2024 +0000
+
+    first commit
+
+[33mcommit 6caf8624fe1366ee83eaf40d920981388c56362a[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sat Sep 14 11:24:14 2024 +0000
+
+    first commit
+
+[33mcommit bb89e77fc6e4884ff7f09c42c1e71cb1542ba351[m
+Author: Ryoichiro Kitahara <175901292+ryoichi1470@users.noreply.github.com>
+Date:   Sat Sep 14 07:23:07 2024 +0000
+
+    first commit
