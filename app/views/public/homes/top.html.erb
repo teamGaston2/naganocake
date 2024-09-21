@@ -14,41 +14,27 @@
           <p class="card-text">会員でない方も商品の閲覧はできますが、購入には会員登録が必要になります。</p>
         </div>
       </div>
-        <h2 class="h4">新着商品</h2>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+       <h2 class="h4">登録商品</h2>
+       <div class="row row-cols-1 row-cols-md-4 g-4">
+          <% @items.each do |item| %>
             <div class="col">
-                <div class="card">
-                    <img src="#" class="card-img-top" alt="商品画像">
-                    <div class="card-body">
-                        <p class="card-text">商品名 ¥0,000</p>
-                    </div>
+              <div class="card">
+                <% if item.image.attached? %>
+                  <%= link_to image_tag(item.image.variant(resize_to_limit: [500, 500]).processed, class: 'card-img-top', alt: item.name), item_path(item) %>
+                <% else %>
+                  <%= link_to image_tag('default-image.png', class: 'card-img-top', alt: 'デフォルト画像'), item_path(item) %>
+                <% end %>
+                <div class="card-body">
+                  <p class="card-text"><%= item.name %> ¥<%= item.price %></p> 
                 </div>
+              </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="#" class="card-img-top" alt="商品画像">
-                    <div class="card-body">
-                        <p class="card-text">商品名 ¥0,000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="#" class="card-img-top" alt="商品画像">
-                    <div class="card-body">
-                        <p class="card-text">商品名 ¥0,000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="#" class="card-img-top" alt="商品画像">
-                    <div class="card-body">
-                        <p class="card-text">商品名 ¥0,000</p>
-                    </div>
-                </div>
-            </div>
+          <% end %>
         </div>
+
+
+
+
         <div class="text-end mt-3">
             <a href="/items" class="text-primary">全ての商品を見る ></a>
         </div>
