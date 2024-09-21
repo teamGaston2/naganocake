@@ -27,6 +27,7 @@ class Public::OrdersController < ApplicationController
       updated_at: Time.current,
     }
 
+
   end
 
   def confirm
