@@ -6,8 +6,6 @@ class CartItem < ApplicationRecord
 
 
   belongs_to :customer
-  has_many :orders
-
   belongs_to :item
 
   def validate_item_count
