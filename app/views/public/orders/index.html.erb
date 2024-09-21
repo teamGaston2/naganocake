@@ -17,15 +17,18 @@
         </thead>
         <tbody>
           <% @order.each do |f| %>
-            <td><%= f.create_at %></td>
+            <td><%= f.created_at %></td>
             <td><%= f.address_display %></td>
-            <td><%= f.order_id.item_id %></td>
-            <td><%= f.price %></td>
-            <td><%= f.making_status %></td>
+            <!--%= f.order_details.item.name.each %>-->
+            <td>
+              <% f.order_details.each do |o| %>
+                <%= o.item.name %>
+              <% end %>
+            </td>
+            <td><%= f.total_payment %></td>
+            <td><%= f.order_status %></td>
 
-            <td><%= f.submit '表示する',class: "btn btn-primary" %></td>
-            <td><%= link_to order_path, "表示する" %></td>
-            <!--どっちでもいける？-->
+            <td><%= link_to "表示する", order_path(f) %></td>
           <% end %>
         </tbody>
       </table>
