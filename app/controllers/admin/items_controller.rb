@@ -12,7 +12,7 @@ class Admin::ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     if @item.save
-      redirect_to admin_items_path, notice: 'Item was successfully created.'
+      redirect_to admin_item_path(@item), notice: 'Item was successfully created.'
     else
       render :new
     end

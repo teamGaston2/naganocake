@@ -7,7 +7,7 @@ class Public::OrdersController < ApplicationController
   end
 
   def index
-    @order = Order.all
+    @orders = current_customer.orders
     @order_detail = OrderDetail.all
   end
 
