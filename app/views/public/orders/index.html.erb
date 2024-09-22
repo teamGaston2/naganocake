@@ -18,7 +18,7 @@
           </tr>
         </thead>
         <tbody>
-          <% @order.each do |f| %>
+          <% @orders.each do |f| %>
             <tr>
               <td><%= f.created_at.strftime("%Y年%m月%d日") %></td>
               <td><%= f.address_display %></td>
@@ -30,7 +30,7 @@
               </td>
               <td><%= f.total_payment %></td>
               <td><%= Order.order_statuses_i18n[f.order_status] %></td>
-              <td><%= link_to "表示する", order_path(f) %></td>
+              <td><%= link_to "表示する", order_path(f), class: "btn btn-primary" %></td>
             </tr>
           <% end %>
         </tbody>

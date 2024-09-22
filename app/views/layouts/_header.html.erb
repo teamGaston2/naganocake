@@ -7,6 +7,11 @@
     <% if customer_signed_in? %>
     <div class="d-flex justify-content-end align-items-center ">
       <ul class="navbar-nav" style="flex-direction: row;">
+        <li class="mr-4">
+          <span class="text-center" style="font-weight: 600;">
+            こんにちは、<%= current_customer.last_name %>さん
+          </span>
+        </li>
         <li>
           <%=  link_to my_page_path(current_customer.id) , class:"nav-link text-light" do %>
             <button type="button" class="btn btn-outline-secondary mr-4" style="color: black; font-weight: 600; border-color: #d3d3d3;">マイページ</button>
