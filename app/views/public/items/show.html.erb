@@ -12,7 +12,7 @@
         <p><%= @item.introduction %></p>
         <p><%= number_with_delimiter((@item.price * 1.1).round) %>円 ( <%= number_with_delimiter(@item.price) %>円 )</p>
         <%= i.hidden_field :item_id, value: @item.id %>
-        <%= i.number_field :amount, min: 1, value: 1 %>
+        <%= i.number_field :amount, value: 1, min: 1 %>
         <%= i.submit 'カートに入れる', class: 'btn btn-success' %>
         <% if flash.now[:alert] %>
           <div class="alert alert-danger"><%= flash.now[:alert] %></div>
