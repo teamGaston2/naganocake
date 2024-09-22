@@ -76,8 +76,8 @@
       <%= f.hidden_field :total_payment, value: @total_payment %>
       <%= f.hidden_field :payment_method, value: @payment_method %>
       <%= f.hidden_field :order_status %>
-      <%= f.fields_for :order_details do |detail_form| %>
-        <% @cart_items.each do |cart_item| %>
+      <% @cart_items.each do |cart_item| %>
+        <%= f.fields_for :order_details, @order.order_details.build do |detail_form| %>
           <%= detail_form.hidden_field :order_id, value: @order.id %>
           <%= detail_form.hidden_field :item_id, value: cart_item.item.id %>
           <%= detail_form.hidden_field :price, value: cart_item.item.price %>
