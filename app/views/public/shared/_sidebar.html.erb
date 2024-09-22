@@ -3,7 +3,7 @@
   <ul class="list-group">
     <% genres.each do |genre| %>
       <li class="d-flex justify-content-between align-items-center pb-2">
-        <li class="pb-2 fa-solid fa-skull"><%= link_to genre.name, my_page_path(genre_id: genre.id), class: 'm-3 text-success' %></li>
+        <li class="pb-2 fa-solid fa-skull"><%= link_to genre.name, items_path, class: 'm-3 text-success' %></li>
       </li>
     <% end %>
   </ul>
