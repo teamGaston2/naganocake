@@ -15,7 +15,6 @@ class Public::SessionsController < Devise::SessionsController
    private
 def customer_state
     customer = Customer.find_by(email: params[:customer][:email])
-    if customer.nil?
       flash[:alert] = "アカウントが見つかりません。新規会員登録を行ってください。"
       redirect_to new_customer_registration_path and return
     end
