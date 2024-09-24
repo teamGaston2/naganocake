@@ -12,26 +12,18 @@ class Public::SessionsController < Devise::SessionsController
      root_path
    end
 
-
-
-   private
-
-    def customer_state
-        customer = Customer.find_by(email: params[:customer][:email])
-        if customer.nil?
-          flash[:alert] = "アカウントが見つかりません。新規会員登録を行ってください。"
-          redirect_to new_customer_registration_path and return
-        end
-        
-        if customer.is_active == false
-          flash[:alert] = "退会済みです。新規会員登録を行ってください"
-          redirect_to new_customer_registration_path
-        end
-
+  private
+  def customer_state
+    customer = Customer.find_by(email: params[:customer][:email])
+    if customer.nil?
+      flash[:alert] = "アカウントが見つかりません。新規会員登録を行ってください。"
+      redirect_to new_customer_registration_path and return
     end
-    
-    
-end
+    if customer.is_active == false
+      flash[:alert] = "退会済みです。新規会員登録を行ってください"
+      redirect_to new_customer_registration_path
+    end
+  end
 
 
   # def customer_params
