@@ -6,4 +6,5 @@ class CartItem < ApplicationRecord
   belongs_to :customer
   belongs_to :item
 
+  validates :amount, numericality: { less_than_or_equal_to: 10, message: 'は10個以下で指定してください。' }
 end
