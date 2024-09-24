@@ -30,10 +30,7 @@ class Public::SessionsController < Devise::SessionsController
 
     end
     
-    if customer.is_active == false
-      flash[:alert] = "退会済みです。新規会員登録を行ってください。"
-      redirect_to new_customer_registration_path
-    end
+    
 end
 
 
