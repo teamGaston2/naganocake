@@ -11,14 +11,14 @@ class Public::SessionsController < Devise::SessionsController
 
 
    private
-    def customer_state
+   def customer_state
         customer = Customer.find_by(email: params[:customer][:email])
+        return if customer nil?
         if customer.is_active == false
         flash[:alert] = "退会済みです。新規会員登録を行ってください"
         redirect_to new_customer_registration_path
         end
-    end
-
+   end
 
   # def customer_params
   #   params.require(:customer).permit(:email)
