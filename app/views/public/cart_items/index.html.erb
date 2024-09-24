@@ -9,10 +9,10 @@
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th scope="row"  style="width: 30%">商品名</th>
-        <th scope="row"  style="width: 15%">単価(税込)</th>
-        <th scope="row"  style="width: 15%">数量</th>
-        <th scope="row"  style="width: 15%">小計</th>
+        <th scope="row"  style="width: 30%" class="text-center">商品名</th>
+        <th scope="row"  style="width: 15%" class="text-center">単価(税込)</th>
+        <th scope="row"  style="width: 15%" class="text-center">数量</th>
+        <th scope="row"  style="width: 15%" class="text-center">小計</th>
         <th scope="row"  style="width: 15%"></th><br>
       </tr>
     </thead>
@@ -21,14 +21,14 @@
     <tr>
       <td><%= image_tag cart_item.item.get_image(150,150) %>
           <%= cart_item.item.name %></td>
-      <td><%= cart_item.item.with_tax_price %></td>
+      <td scope="right" style="text-align: right;"><%= cart_item.item.with_tax_price %>円</td>
       <td><%= form_with model: cart_item, url: cart_item_path(cart_item.id), method: :patch, local: true do |f| %>
           <%= f.hidden_field :item_id, :value => cart_item.item.id %>
           <%= f.number_field :amount, min: 1 %>
           <%= f.submit "変更", class: "btn btn-success" %>
           <% end %></td>
-      <td><%= cart_item.subtotal %></td>
-      <td><%= link_to "削除", cart_item_path(cart_item.id), class: "btn btn-danger", method: :delete, "data-confirm" => "本当に消しますか?" %>
+      <td scope="right" style="text-align: right;"><%= cart_item.subtotal %>円</td>
+      <td scope="row" class="text-center"><%= link_to "削除", cart_item_path(cart_item.id), class: "btn btn-danger", method: :delete, "data-confirm" => "本当に消しますか?" %>
       </td>
           <% @total_payment += cart_item.subtotal %>
     </tr>
@@ -39,15 +39,15 @@
 
   <div class="row">
     <div class="col-8">
-      <%= link_to "買い物を続ける", root_path, class: "btn btn-success" %>
+      <%= link_to "買い物を続ける", root_path, class: "btn btn-warning" %>
     </div>
 
     <div class="col-4">
       <table class="table table-bordered">
         <tbody>
           <tr>
-            <th scope="row" width= 30% >合計金額</th>
-            <td scope="row" width= 50% ><%= @total_payment %></td>
+            <th scope="row" width= 30% class="text-center">合計金額</th>
+            <td scope="right" width="50%" style="text-align: right;"><%= @total_payment %>円</td>
           </tr>
         </tbody>
       </table>
