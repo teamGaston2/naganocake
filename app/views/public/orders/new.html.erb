@@ -17,11 +17,11 @@
       </div>
       <div class="col-md-12 mx-2">
         <div class="form-check">
-        <%= f.radio_button :payment_method, Order.payment_methods.key(0) %>
+        <%= f.radio_button :payment_method, Order.payment_methods.key(0), checked: "checked", class: "form-check-input" %>
         <%= f.label :payment_method_credit_card, Order.payment_methods_i18n[:credit_card] %>
         </div>
         <div class="form-check">
-        <%= f.radio_button :payment_method, Order.payment_methods.key(1) %>
+        <%= f.radio_button :payment_method, Order.payment_methods.key(1), class: "form-check-input" %>
         <%= f.label :payment_method_transfer, Order.payment_methods_i18n[:transfer]%>
         </div>
       </div>

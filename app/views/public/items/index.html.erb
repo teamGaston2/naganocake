@@ -14,7 +14,7 @@
               <%= image_tag(f.get_image(200, 200), class: "card-img-top") %>
               <div class="card-body flex-grow-1">
                 <div class="card-text"><%= f.name %></div>
-                <div class="card-text"><%= f.with_tax_price %>円</div>
+                <div class="card-text"><%= number_with_delimiter(f.with_tax_price) %>円</div>
               </div>
             <% end %>
           </div>
